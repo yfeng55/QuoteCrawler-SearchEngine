@@ -6,11 +6,14 @@ import opennlp.tools.chunker.Chunker;
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.cmdline.postag.POSModelLoader;
+import opennlp.tools.namefind.NameFinderME;
+import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
+import opennlp.tools.util.Span;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -62,30 +65,36 @@ public class QuoteParse {
         ChunkerModel chunkerModel = new ChunkerModel(new FileInputStream(new File("./en-chunker.bin")));
         Chunker chunker = new ChunkerME(chunkerModel);
 
-        //String[] maintext_chunks = chunker.chunk(maintext_tokens, maintext_tags);
-        //System.out.println(Arrays.toString(maintext_chunks));
 
+        // (6) locate named entities in the text //
+        TokenNameFinderModel nameModel = new TokenNameFinderModel(new FileInputStream(new File("./en-ner-person.bin")));
+        NameFinderME nameFinder = new NameFinderME(nameModel);
 
-
+        Span[] namespans = nameFinder.find(maintext_tokens);
+        for(Span name : namespans){
+            for(int i=name.getStart(); i<name.getEnd(); i++){
+                System.out.print(maintext_tokens[i] + " ");
+            }
+            System.out.println();
+        }
 
 
         // (6) Create a table of most frequently occurring proper nouns //
-
-        Hashtable<String, Integer> proper_nouns_freq = new Hashtable<>();
-
-        for(int i=0; i<maintext_tokens.length; i++){
-            if(maintext_tags[i].equals("NNP")){
-
-                if(proper_nouns_freq.containsKey(maintext_tokens[i])){
-                    int oldcount = proper_nouns_freq.get(maintext_tokens[i]);
-                    proper_nouns_freq.remove(maintext_tokens[i]);
-                    proper_nouns_freq.put(maintext_tokens[i], oldcount + 1);
-                }else{
-                    proper_nouns_freq.put(maintext_tokens[i], 1);
-                }
-
-            }
-        }
+//        Hashtable<String, Integer> proper_nouns_freq = new Hashtable<>();
+//
+//        for(int i=0; i<maintext_tokens.length; i++){
+//            if(maintext_tags[i].equals("NNP")){
+//
+//                if(proper_nouns_freq.containsKey(maintext_tokens[i])){
+//                    int oldcount = proper_nouns_freq.get(maintext_tokens[i]);
+//                    proper_nouns_freq.remove(maintext_tokens[i]);
+//                    proper_nouns_freq.put(maintext_tokens[i], oldcount + 1);
+//                }else{
+//                    proper_nouns_freq.put(maintext_tokens[i], 1);
+//                }
+//
+//            }
+//        }
         //System.out.println(proper_nouns_freq.toString());
 
 
@@ -103,17 +112,18 @@ public class QuoteParse {
             String[] quote_pos = posTagger.tag(quote_tokens);
             String[] quote_chunks = chunker.chunk(quote_tokens, quote_pos);
 
-            System.out.println();
-            System.out.println(Arrays.toString(quote_tokens));
-            System.out.println(Arrays.toString(quote_pos));
-            System.out.println(Arrays.toString(quote_chunks));
+//            System.out.println();
+//            System.out.println(Arrays.toString(quote_tokens));
+//            System.out.println(Arrays.toString(quote_pos));
+//            System.out.println(Arrays.toString(quote_chunks));
 
 
-            //TODO: get the subject of the quotetext
+            // get the subject of the quotetext
             System.out.println("QUOTE SUBJECT: " + getQuoteSubject(quote_tokens, quote_pos, quote_chunks));
 
 
             //TODO: get the speaker
+
 
         }
 
@@ -121,10 +131,12 @@ public class QuoteParse {
     }
 
 
+
+    //get the subject of a quote -- refers to the pos tags and chunks
     private static String getQuoteSubject(String[] quote_tokens, String[] quote_pos, String[] quote_chunks){
         String subject = "unresolved";
 
-        // look for proper nouns (NNP)
+        // 1. look for proper nouns (NNP)
         for(int i=0; i<quote_tokens.length; i++){
             String nnp_subject = "";
             if(quote_pos[i].equals("NNP") || quote_pos[i].equals("NNPS")){
@@ -143,8 +155,7 @@ public class QuoteParse {
             }
         }
 
-
-        // look for singular nouns (NNS)
+        // 2. look for singular nouns (NNS)
         for(int i=0; i<quote_tokens.length; i++){
             String nnp_subject = "";
             if(quote_pos[i].equals("NN") || quote_pos[i].equals("NNS")){
@@ -164,9 +175,7 @@ public class QuoteParse {
         }
 
 
-        // look for pronouns (need to resolve pronouns)
-
-
+        // TODO: look for pronouns (need to resolve pronouns)
 
 
         return subject;
