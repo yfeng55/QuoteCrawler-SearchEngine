@@ -58,6 +58,7 @@ public class QuoteParse {
         // (5) chunk the text //
         ChunkerModel chunkerModel = new ChunkerModel(new FileInputStream(new File("./en-chunker.bin")));
         Chunker chunker = new ChunkerME(chunkerModel);
+        String[] maintext_chunks = chunker.chunk(maintext_tokens, maintext_tags);
 
 
         // (6) locate named entities in the text //
@@ -91,7 +92,7 @@ public class QuoteParse {
 
 
             //TODO: get the speaker
-            String quotespeaker = getQuoteSpeaker(maintext_tokens, iStartQuote, iEndQuote);
+            String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, iStartQuote, iEndQuote);
             System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
 
@@ -157,7 +158,7 @@ public class QuoteParse {
 
 
     //get the speaker of a quote
-    private static String getQuoteSpeaker(String[] maintext_tokens, int iStart, int iEnd){
+    private static String getQuoteSpeaker(String[] maintext_tokens, String[] maintext_chunks, int iStart, int iEnd){
         String speaker = "unresolved";
 
         if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2) != -1){
@@ -165,7 +166,11 @@ public class QuoteParse {
             System.out.println("said index: " + Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2));
             System.out.println("iEnd: " + iEnd);
 
-            speaker = maintext_tokens[Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2) + 1];
+            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2);
+
+//            speaker = maintext_tokens[said_position + 1];
+
+            speaker = Util.getChunkStringAtIndex(maintext_tokens, maintext_chunks, said_position);
         }
         else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, -2) != -1){
             System.out.println("said is within -2 of iStart");

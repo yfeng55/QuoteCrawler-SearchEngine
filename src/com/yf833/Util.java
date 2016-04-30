@@ -117,8 +117,19 @@ public class Util {
     }
 
     // return a string for the noun-phrase chunk starting at the provided index
-    public static String getChunkStringAtIndex(String[] maintext_tokens, String[] maintext_chunks){
+    public static String getChunkStringAtIndex(String[] maintext_tokens, String[] maintext_chunks, int index){
         String output = "";
+        int i = index+1;
+
+        output += maintext_tokens[i];
+        i++;
+        try{
+            while (maintext_chunks[i].equals("I-NP") && i<maintext_tokens.length) {
+                output += " " + maintext_tokens[i];
+                i++;
+            }
+        }catch(ArrayIndexOutOfBoundsException e){
+        }
 
         return output;
     }
