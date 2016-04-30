@@ -48,6 +48,7 @@ public class QuoteParse {
         Tokenizer tokenizer = new TokenizerME(tokenModel);
         String[] maintext_tokens = tokenizer.tokenize(maintext);
         System.out.println(Arrays.toString(maintext_tokens));
+        System.out.println("QUOTE COUNT: " + Util.getNumberOfQuotes(maintext_tokens));
 
 
         // (4) initialize a part-of-speech tagger //
@@ -67,15 +68,17 @@ public class QuoteParse {
         Span[] namespans = nameFinder.find(maintext_tokens);   //contains start-end indices of names in maintext_tokens[]
 
 
-
         // (6) Iterate through the text and process quotes //
-        int iStartQuote=0, iEndQuote;
+        int iStartQuote=0;
 
-        //while the maintext string has contains another opening quote character
-        while((iStartQuote = maintext.indexOf("“", iStartQuote+1)) != -1) {
-            iEndQuote = maintext.indexOf("”", iStartQuote+1);
-            String quotetext = maintext.substring(iStartQuote, iEndQuote);
-            //System.out.println(quotetext);
+        //while  maintext_tokens[] contains another opening quote character
+        while(Util.getNextQuotePosition(maintext_tokens, iStartQuote) != -1) {
+
+            iStartQuote = Util.getNextQuotePosition(maintext_tokens, iStartQuote);
+
+
+            String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
+            System.out.println("QUOTE TEXT: " + quotetext);
 
             String[] quote_tokens = tokenizer.tokenize(quotetext);
             String[] quote_pos = posTagger.tag(quote_tokens);
@@ -94,10 +97,13 @@ public class QuoteParse {
 
             //TODO: get the speaker
             String quotespeaker = getQuoteSpeaker();
-            System.out.println("QUOTE SPEAKER: " + quotespeaker);
+//            System.out.println("QUOTE SPEAKER: " + quotespeaker);
+
 
 
         }
+
+
 
         return quotes_list;
     }

@@ -44,6 +44,50 @@ public class Util {
     }
 
 
+    //count the number of quotes in the text
+    public static int getNumberOfQuotes(String maintext_tokens[]){
+        int count=0;
+
+        for(int i=0; i<maintext_tokens.length; i++) {
+            if(maintext_tokens[i].equals("”")){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    //get the position of the next quote
+    public static int getNextQuotePosition(String[] maintext_tokens, int iStart){
+
+        int nextquote_position = -1;
+
+        for(int i=iStart+1; i<maintext_tokens.length; i++){
+            if(maintext_tokens[i].equals("“")){
+                nextquote_position = i;
+                break;
+            }
+        }
+
+        return nextquote_position;
+    }
+
+    //get the quote text
+    public static String getQuoteText(String[] maintext_tokens, int iStart){
+
+        String quote_text = "";
+
+        int i=iStart;
+        while(!maintext_tokens[i].equals("”")){
+            quote_text += maintext_tokens[i] + " ";
+            i++;
+        }
+
+        return quote_text;
+    }
+
+
 }
 
 
