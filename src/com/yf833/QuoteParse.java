@@ -44,24 +44,19 @@ public class QuoteParse {
 
 
         // (3) tokenize the text //
-
         TokenizerModel tokenModel = new TokenizerModel(new FileInputStream(new File("./en-token.bin")));
         Tokenizer tokenizer = new TokenizerME(tokenModel);
         String[] maintext_tokens = tokenizer.tokenize(maintext);
         System.out.println(Arrays.toString(maintext_tokens));
 
 
-
         // (4) initialize a part-of-speech tagger //
-
         POSModel posModel = new POSModelLoader().load(new File("./en-pos-maxent.bin"));
         POSTaggerME posTagger = new POSTaggerME(posModel);
         String[] maintext_tags = posTagger.tag(maintext_tokens);
 
 
-
         // (5) chunk the text //
-
         ChunkerModel chunkerModel = new ChunkerModel(new FileInputStream(new File("./en-chunker.bin")));
         Chunker chunker = new ChunkerME(chunkerModel);
 
@@ -69,40 +64,14 @@ public class QuoteParse {
         // (6) locate named entities in the text //
         TokenNameFinderModel nameModel = new TokenNameFinderModel(new FileInputStream(new File("./en-ner-person.bin")));
         NameFinderME nameFinder = new NameFinderME(nameModel);
-
-        Span[] namespans = nameFinder.find(maintext_tokens);
-        for(Span name : namespans){
-            for(int i=name.getStart(); i<name.getEnd(); i++){
-                System.out.print(maintext_tokens[i] + " ");
-            }
-            System.out.println();
-        }
-
-
-        // (6) Create a table of most frequently occurring proper nouns //
-//        Hashtable<String, Integer> proper_nouns_freq = new Hashtable<>();
-//
-//        for(int i=0; i<maintext_tokens.length; i++){
-//            if(maintext_tags[i].equals("NNP")){
-//
-//                if(proper_nouns_freq.containsKey(maintext_tokens[i])){
-//                    int oldcount = proper_nouns_freq.get(maintext_tokens[i]);
-//                    proper_nouns_freq.remove(maintext_tokens[i]);
-//                    proper_nouns_freq.put(maintext_tokens[i], oldcount + 1);
-//                }else{
-//                    proper_nouns_freq.put(maintext_tokens[i], 1);
-//                }
-//
-//            }
-//        }
-        //System.out.println(proper_nouns_freq.toString());
+        Span[] namespans = nameFinder.find(maintext_tokens);   //contains start-end indices of names in maintext_tokens[]
 
 
 
-        // (7) Iterate through the text and process quotes //
-
+        // (6) Iterate through the text and process quotes //
         int iStartQuote=0, iEndQuote;
 
+        //while the maintext string has contains another opening quote character
         while((iStartQuote = maintext.indexOf("“", iStartQuote+1)) != -1) {
             iEndQuote = maintext.indexOf("”", iStartQuote+1);
             String quotetext = maintext.substring(iStartQuote, iEndQuote);
@@ -118,11 +87,14 @@ public class QuoteParse {
 //            System.out.println(Arrays.toString(quote_chunks));
 
 
-            // get the subject of the quotetext
-            System.out.println("QUOTE SUBJECT: " + getQuoteSubject(quote_tokens, quote_pos, quote_chunks));
+            // get the subject of the quotetext //
+            String quotesubject = getQuoteSubject(quote_tokens, quote_pos, quote_chunks);
+//            System.out.println("QUOTE SUBJECT: " + quotesubject);
 
 
             //TODO: get the speaker
+            String quotespeaker = getQuoteSpeaker();
+            System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
 
         }
@@ -142,13 +114,13 @@ public class QuoteParse {
             if(quote_pos[i].equals("NNP") || quote_pos[i].equals("NNPS")){
                 nnp_subject += quote_tokens[i];
                 i++;
-                while (quote_chunks[i].equals("I-NP") && i<quote_tokens.length) {
-                    nnp_subject += " " + quote_tokens[i];
-                    i++;
 
-                    if(i >= quote_tokens.length){
-                        break;
+                try{
+                    while (quote_chunks[i].equals("I-NP") && i<quote_tokens.length) {
+                        nnp_subject += " " + quote_tokens[i];
+                        i++;
                     }
+                }catch(ArrayIndexOutOfBoundsException e){
                 }
 
                 return nnp_subject;
@@ -161,13 +133,13 @@ public class QuoteParse {
             if(quote_pos[i].equals("NN") || quote_pos[i].equals("NNS")){
                 nnp_subject += quote_tokens[i];
                 i++;
-                while(quote_chunks[i].equals("I-NP") && i<quote_tokens.length){
-                    nnp_subject += " " + quote_tokens[i];
-                    i++;
 
-                    if(i >= quote_tokens.length){
-                        break;
+                try{
+                    while(quote_chunks[i].equals("I-NP") && i<quote_tokens.length){
+                        nnp_subject += " " + quote_tokens[i];
+                        i++;
                     }
+                }catch(ArrayIndexOutOfBoundsException e){
                 }
 
                 return nnp_subject;
@@ -181,6 +153,13 @@ public class QuoteParse {
         return subject;
     }
 
+
+    //get the speaker of a quote
+    private static String getQuoteSpeaker(){
+        String speaker = "unresolved";
+
+        return speaker;
+    }
 
 
 }

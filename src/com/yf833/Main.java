@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class Main {
 
-    public static final String input_path = "./sample_articles/hilary-clinton-new-york_nytimes.html";
-//    public static final String input_path = "./sample_articles/bernie-sanders-hillary-clinton-dnc_theatlantic.html";
+//    public static final String input_path = "./sample_articles/hilary-clinton-new-york_nytimes.html";
+    public static final String input_path = "./sample_articles/bernie-sanders-hillary-clinton-dnc_theatlantic.html";
 
     public static void main(String[] args) throws IOException, BoilerpipeProcessingException {
 
