@@ -95,6 +95,35 @@ public class Util {
     }
 
 
+    // find the position of said within x of the provided index
+    public static int positionOfSaidWithin_x(String[] maintext_tokens, int quoteIndex, int x){
+
+        if(x>0){
+            int i=quoteIndex;
+            while(i < (quoteIndex + x)){
+                if(maintext_tokens[i].equals("said") || maintext_tokens[i].contains("said")){ return i; }
+                i++;
+            }
+        }
+        else{
+            int i=quoteIndex;
+            while(i > (quoteIndex - x)){
+                if(maintext_tokens[i].equals("said") || maintext_tokens[i].contains("said")){ return i; }
+                i--;
+            }
+        }
+
+        return -1;
+    }
+
+    // return a string for the noun-phrase chunk starting at the provided index
+    public static String getChunkStringAtIndex(String[] maintext_tokens, String[] maintext_chunks){
+        String output = "";
+
+        return output;
+    }
+
+
 }
 
 

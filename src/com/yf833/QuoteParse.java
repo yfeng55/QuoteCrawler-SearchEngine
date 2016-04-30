@@ -20,10 +20,8 @@ import org.jsoup.nodes.Document;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Hashtable;
 
 
 public class QuoteParse {
@@ -70,34 +68,31 @@ public class QuoteParse {
 
         // (6) Iterate through the text and process quotes //
         int iStartQuote=0;
+        int iEndQuote;
 
         //while  maintext_tokens[] contains another opening quote character
         while(Util.getNextQuotePosition(maintext_tokens, iStartQuote) != -1) {
 
             iStartQuote = Util.getNextQuotePosition(maintext_tokens, iStartQuote);
-
+            iEndQuote = Util.getCloseQuotePosition(maintext_tokens, iStartQuote);
 
             String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
             System.out.println("QUOTE TEXT: " + quotetext);
 
+            // get quote tokens, part-of-speech tags, and chunks //
             String[] quote_tokens = tokenizer.tokenize(quotetext);
             String[] quote_pos = posTagger.tag(quote_tokens);
             String[] quote_chunks = chunker.chunk(quote_tokens, quote_pos);
 
-//            System.out.println();
-//            System.out.println(Arrays.toString(quote_tokens));
-//            System.out.println(Arrays.toString(quote_pos));
-//            System.out.println(Arrays.toString(quote_chunks));
-
 
             // get the subject of the quotetext //
             String quotesubject = getQuoteSubject(quote_tokens, quote_pos, quote_chunks);
-//            System.out.println("QUOTE SUBJECT: " + quotesubject);
+            System.out.println("QUOTE SUBJECT: " + quotesubject);
 
 
             //TODO: get the speaker
-            String quotespeaker = getQuoteSpeaker();
-//            System.out.println("QUOTE SPEAKER: " + quotespeaker);
+            String quotespeaker = getQuoteSpeaker(maintext_tokens, iStartQuote, iEndQuote);
+            System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
 
 
@@ -162,8 +157,23 @@ public class QuoteParse {
 
 
     //get the speaker of a quote
-    private static String getQuoteSpeaker(){
+    private static String getQuoteSpeaker(String[] maintext_tokens, int iStart, int iEnd){
         String speaker = "unresolved";
+
+        if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2) != -1){
+            System.out.println("said is within +2 of iEnd");
+            System.out.println("said index: " + Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2));
+            System.out.println("iEnd: " + iEnd);
+
+            speaker = maintext_tokens[Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2) + 1];
+        }
+        else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, -2) != -1){
+            System.out.println("said is within -2 of iStart");
+            speaker = maintext_tokens[(Util.positionOfSaidWithin_x(maintext_tokens, iStart, -2))];
+        }
+        else{
+
+        }
 
         return speaker;
     }
