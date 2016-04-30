@@ -64,7 +64,7 @@ public class Util {
         int nextquote_position = -1;
 
         for(int i=iStart+1; i<maintext_tokens.length; i++){
-            if(maintext_tokens[i].equals("“")){
+            if(maintext_tokens[i].equals("“") || maintext_tokens[i].contains("“")){
                 nextquote_position = i;
                 break;
             }
