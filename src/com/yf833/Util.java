@@ -62,15 +62,22 @@ public class Util {
     public static int getNextQuotePosition(String[] maintext_tokens, int iStart){
 
         int nextquote_position = -1;
-
         for(int i=iStart+1; i<maintext_tokens.length; i++){
             if(maintext_tokens[i].equals("“") || maintext_tokens[i].contains("“")){
                 nextquote_position = i;
                 break;
             }
         }
-
         return nextquote_position;
+    }
+
+    //get the next closed quote position
+    public static int getCloseQuotePosition(String[] maintext_tokens, int iStart){
+        int i=iStart;
+        while(!maintext_tokens[i].equals("”")){
+            i++;
+        }
+        return i;
     }
 
     //get the quote text
