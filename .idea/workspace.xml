@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc7abb7-b249-45cf-8553-2d6a75f7c857" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/QuoteParse.class" afterPath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/QuoteParse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Main.java" afterPath="$PROJECT_DIR$/src/com/yf833/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Quote.java" afterPath="$PROJECT_DIR$/src/com/yf833/Quote.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" afterPath="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Util.java" afterPath="$PROJECT_DIR$/src/com/yf833/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_articles/donald-trump-foreign-policy_nytimes.html" afterPath="$PROJECT_DIR$/sample_articles/donald-trump-foreign-policy_nytimes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_articles/donald-trump-transcript_nytimes.html" afterPath="$PROJECT_DIR$/sample_articles/donald-trump-transcript_nytimes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quote-extract.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,14 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuoteParse.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuoteParse.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/QuoteParse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.19169329">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="e#1231#1238#0" expanded="true" />
-                <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+                <element signature="e#1353#1360#0" expanded="true" />
+                <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,8 +55,8 @@
       <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.481482">
-              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+            <state vertical-scroll-proportion="-12.518518">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/Quote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29402757">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -499,8 +496,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,8 +536,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,8 +576,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,8 +616,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,8 +656,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,8 +703,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,8 +750,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,17 +799,25 @@
     <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yf833/Quote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.481482">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state vertical-scroll-proportion="-12.518518">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -821,20 +826,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/QuoteParse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.19169329">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#1231#1238#0" expanded="true" />
-            <element signature="method#getQuoteSubject#0;class#QuoteParse#0" expanded="false" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="method#getQuoteSpeaker#0;class#QuoteParse#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yf833/Quote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29402757">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>

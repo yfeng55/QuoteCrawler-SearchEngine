@@ -1,16 +1,12 @@
 package com.yf833;
 
-
 import opennlp.tools.util.Span;
-
 import java.util.Hashtable;
 
 public class Util {
 
 
-
     // Return a table of most frequently occurring proper nouns //
-
     public static Hashtable<String, Integer> getProperNounFrequency(String[] maintext_tokens, String[] maintext_tags){
         Hashtable<String, Integer> proper_nouns_freq = new Hashtable<>();
 
@@ -100,17 +96,27 @@ public class Util {
 
         if(x>0){
             int i=quoteIndex;
-            while(i < (quoteIndex + x)){
-                if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied")){ return i; }
-                i++;
+            try{
+                while(i < (quoteIndex + x)){
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked"))
+                    { return i; }
+                    i++;
+                }
+            }catch(ArrayIndexOutOfBoundsException e){
             }
+
         }
         else{
             int i=quoteIndex;
-            while(i > (quoteIndex - x)){
-                if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied")){ return i; }
-                i--;
+            try{
+                while(i > (quoteIndex - x)){
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked"))
+                    { return i; }
+                    i--;
+                }
+            }catch(ArrayIndexOutOfBoundsException e){
             }
+
         }
 
         return -1;
@@ -146,14 +152,39 @@ public class Util {
                     speaker += maintext_tokens[i] + " ";
                 }
             }
-
         }
 
         return speaker;
     }
 
 
+    // find the nearest named entity in either direction of a quote
+    public static String getNearestNamedEntity(String[] maintext_tokens, Span[] namespans, int iStart, int iEnd){
+        String speaker = "";
 
+        while((iStart > 0 || iEnd < maintext_tokens.length) && speaker.equals("")){
+
+            for(Span name : namespans){
+
+                if(name.getStart() == iStart){
+                    for(int i=name.getStart(); i<name.getEnd(); i++){
+                        speaker += maintext_tokens[i] + " ";
+                    }
+                }
+                else if(name.getStart() == iEnd){
+                    for(int i=name.getStart(); i<name.getEnd(); i++){
+                        speaker += maintext_tokens[i] + " ";
+                    }
+                }
+
+            }
+
+            iStart--;
+            iEnd++;
+        }
+
+        return speaker;
+    }
 
 
 

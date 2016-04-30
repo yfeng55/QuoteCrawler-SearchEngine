@@ -27,9 +27,9 @@ import java.util.Arrays;
 public class QuoteParse {
 
     public static int SAID_SPAN = 6;    // denotes the +/- number of tokens to look for the word "said" when resolving speakers
+    public static int QUOTE_TOKEN_MIN = 3; // denotes the minimum number of tokens a quote needs in order to be considered valid
 
-
-    // return an arraylist of text objects extracted from the given page
+    // return an arraylist of quotes extracted from the given page
     public static ArrayList<Quote> getQuotes(File input_file) throws IOException, BoilerpipeProcessingException {
 
         ArrayList<Quote> quotes_list = new ArrayList<Quote>();
@@ -48,7 +48,7 @@ public class QuoteParse {
         Tokenizer tokenizer = new TokenizerME(tokenModel);
         String[] maintext_tokens = tokenizer.tokenize(maintext);
         System.out.println(Arrays.toString(maintext_tokens));
-        System.out.println("QUOTE COUNT: " + Util.getNumberOfQuotes(maintext_tokens));
+        System.out.println("QUOTE COUNT (CANDIDATES): " + Util.getNumberOfQuotes(maintext_tokens));
 
 
         // (4) initialize a part-of-speech tagger //
@@ -80,7 +80,9 @@ public class QuoteParse {
             iEndQuote = Util.getCloseQuotePosition(maintext_tokens, iStartQuote);
 
             String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
-            System.out.println("QUOTE TEXT: " + quotetext);
+            quotetext = quotetext.replace("“", "");
+            quotetext = quotetext.replaceAll("\\s+(?=\\p{Punct})", "");
+            //System.out.println("QUOTE TEXT: " + quotetext);
 
             // get text tokens, part-of-speech tags, and chunks //
             String[] quote_tokens = tokenizer.tokenize(quotetext);
@@ -88,28 +90,34 @@ public class QuoteParse {
             String[] quote_chunks = chunker.chunk(quote_tokens, quote_pos);
 
 
-            // get the subject of the quotetext //
+            // get the subject of the quote //
             String quotesubject = getQuoteSubject(quote_tokens, quote_pos, quote_chunks);
-            System.out.println("QUOTE SUBJECT: " + quotesubject);
+            quotesubject = quotesubject.replace("“", "");
+            //System.out.println("QUOTE SUBJECT: " + quotesubject);
 
 
-            //TODO: get the speaker
+            // get the speaker of the quote //
             String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, namespans, iStartQuote, iEndQuote);
-            System.out.println("QUOTE SPEAKER: " + quotespeaker);
+            quotespeaker = quotespeaker.replace("“", "");
+            //System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
 
+            // create a new quote and store in quotes list (discard quotes that are just two words)//
+            if(quotetext.split(" +").length > QUOTE_TOKEN_MIN){
+                Quote newquote = new Quote(input_file.getAbsolutePath(), quotespeaker, quotesubject, quotetext);
 
-            System.out.println();
+                System.out.println(newquote);
+                quotes_list.add(newquote);
+            }
+
         }
-
-
 
         return quotes_list;
     }
 
 
 
-    //get the subject of a text -- refers to the pos tags and chunks
+    //get the subject of a quote -- refers to the pos tags and chunks
     private static String getQuoteSubject(String[] quote_tokens, String[] quote_pos, String[] quote_chunks){
         String subject = "unresolved";
 
@@ -151,37 +159,34 @@ public class QuoteParse {
             }
         }
 
-
-        // TODO: look for pronouns (need to resolve pronouns)
-
-
         return subject;
     }
 
 
-    //get the speaker of a text
+    //get the speaker of a quote
     private static String getQuoteSpeaker(String[] maintext_tokens, String[] maintext_chunks, Span[] namespans, int iStart, int iEnd){
         String speaker = "unresolved";
 
         // (1) if said occurs within x number of tokens of iEnd //
         if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN) != -1){
-            System.out.println("said is within +5 of iEnd");
-            //System.out.println("said index: " + Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN));
-            //System.out.println("iEnd: " + iEnd);
+            //System.out.println("said is within +5 of iEnd");
 
             int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
-
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
         }
 
         // (2) if said occurs within x number of tokens of iStart //
         else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1) != -1){
-            System.out.println("said is within -5 of iStart");
-            speaker = maintext_tokens[(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1))];
+            //System.out.println("said is within -5 of iStart");
+
+            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
+            speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
         }
 
         // catch-all: select the nearest named entity (in either direction) //
         else{
+
+            speaker = Util.getNearestNamedEntity(maintext_tokens, namespans, iStart, iEnd);
 
         }
 
@@ -189,4 +194,19 @@ public class QuoteParse {
     }
 
 
+    //get the sentiment of a quote
+    private static double getQuoteSentiment(){
+
+
+
+        return 0.0;
+    }
+
 }
+
+
+
+
+
+
+
