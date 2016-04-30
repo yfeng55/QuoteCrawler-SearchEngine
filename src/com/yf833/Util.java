@@ -58,7 +58,7 @@ public class Util {
     }
 
 
-    //get the position of the next quote
+    //get the position of the next text
     public static int getNextQuotePosition(String[] maintext_tokens, int iStart){
 
         int nextquote_position = -1;
@@ -71,7 +71,7 @@ public class Util {
         return nextquote_position;
     }
 
-    //get the next closed quote position
+    //get the next closed text position
     public static int getCloseQuotePosition(String[] maintext_tokens, int iStart){
         int i=iStart;
         while(!maintext_tokens[i].equals("”")){
@@ -80,7 +80,7 @@ public class Util {
         return i;
     }
 
-    //get the quote text
+    //get the text text
     public static String getQuoteText(String[] maintext_tokens, int iStart){
 
         String quote_text = "";
@@ -101,14 +101,14 @@ public class Util {
         if(x>0){
             int i=quoteIndex;
             while(i < (quoteIndex + x)){
-                if(maintext_tokens[i].equals("said") || maintext_tokens[i].contains("said")){ return i; }
+                if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied")){ return i; }
                 i++;
             }
         }
         else{
             int i=quoteIndex;
             while(i > (quoteIndex - x)){
-                if(maintext_tokens[i].equals("said") || maintext_tokens[i].contains("said")){ return i; }
+                if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied")){ return i; }
                 i--;
             }
         }
@@ -135,6 +135,32 @@ public class Util {
     }
 
 
+    // get the speaker near the provided position of "said"
+    public static String getSpeakerNearSaid(String[] maintext_tokens, Span[] namespans, int saidIndex){
+        String speaker = "";
+
+        for(Span name : namespans){
+
+            if(Math.abs(name.getStart()-saidIndex) <= 5 || Math.abs(name.getEnd()-saidIndex) <= 5){
+                for(int i=name.getStart(); i<name.getEnd(); i++){
+                    speaker += maintext_tokens[i] + " ";
+                }
+            }
+
+        }
+
+        return speaker;
+    }
+
+
+
+
+
+
 }
+
+
+
+
 
 

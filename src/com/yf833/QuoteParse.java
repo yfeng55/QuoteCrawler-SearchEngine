@@ -26,8 +26,10 @@ import java.util.Arrays;
 
 public class QuoteParse {
 
+    public static int SAID_SPAN = 6;    // denotes the +/- number of tokens to look for the word "said" when resolving speakers
 
-    // return an arraylist of quote objects extracted from the given page
+
+    // return an arraylist of text objects extracted from the given page
     public static ArrayList<Quote> getQuotes(File input_file) throws IOException, BoilerpipeProcessingException {
 
         ArrayList<Quote> quotes_list = new ArrayList<Quote>();
@@ -71,7 +73,7 @@ public class QuoteParse {
         int iStartQuote=0;
         int iEndQuote;
 
-        //while  maintext_tokens[] contains another opening quote character
+        //while  maintext_tokens[] contains another opening text character
         while(Util.getNextQuotePosition(maintext_tokens, iStartQuote) != -1) {
 
             iStartQuote = Util.getNextQuotePosition(maintext_tokens, iStartQuote);
@@ -80,7 +82,7 @@ public class QuoteParse {
             String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
             System.out.println("QUOTE TEXT: " + quotetext);
 
-            // get quote tokens, part-of-speech tags, and chunks //
+            // get text tokens, part-of-speech tags, and chunks //
             String[] quote_tokens = tokenizer.tokenize(quotetext);
             String[] quote_pos = posTagger.tag(quote_tokens);
             String[] quote_chunks = chunker.chunk(quote_tokens, quote_pos);
@@ -92,7 +94,7 @@ public class QuoteParse {
 
 
             //TODO: get the speaker
-            String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, iStartQuote, iEndQuote);
+            String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, namespans, iStartQuote, iEndQuote);
             System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
 
@@ -107,7 +109,7 @@ public class QuoteParse {
 
 
 
-    //get the subject of a quote -- refers to the pos tags and chunks
+    //get the subject of a text -- refers to the pos tags and chunks
     private static String getQuoteSubject(String[] quote_tokens, String[] quote_pos, String[] quote_chunks){
         String subject = "unresolved";
 
@@ -157,25 +159,28 @@ public class QuoteParse {
     }
 
 
-    //get the speaker of a quote
-    private static String getQuoteSpeaker(String[] maintext_tokens, String[] maintext_chunks, int iStart, int iEnd){
+    //get the speaker of a text
+    private static String getQuoteSpeaker(String[] maintext_tokens, String[] maintext_chunks, Span[] namespans, int iStart, int iEnd){
         String speaker = "unresolved";
 
-        if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2) != -1){
-            System.out.println("said is within +2 of iEnd");
-            System.out.println("said index: " + Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2));
-            System.out.println("iEnd: " + iEnd);
+        // (1) if said occurs within x number of tokens of iEnd //
+        if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN) != -1){
+            System.out.println("said is within +5 of iEnd");
+            //System.out.println("said index: " + Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN));
+            //System.out.println("iEnd: " + iEnd);
 
-            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, 2);
+            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
 
-//            speaker = maintext_tokens[said_position + 1];
-
-            speaker = Util.getChunkStringAtIndex(maintext_tokens, maintext_chunks, said_position);
+            speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
         }
-        else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, -2) != -1){
-            System.out.println("said is within -2 of iStart");
-            speaker = maintext_tokens[(Util.positionOfSaidWithin_x(maintext_tokens, iStart, -2))];
+
+        // (2) if said occurs within x number of tokens of iStart //
+        else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1) != -1){
+            System.out.println("said is within -5 of iStart");
+            speaker = maintext_tokens[(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1))];
         }
+
+        // catch-all: select the nearest named entity (in either direction) //
         else{
 
         }
