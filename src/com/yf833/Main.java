@@ -12,10 +12,12 @@ import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -35,6 +37,7 @@ public class Main {
     private static int maxPages = 10;                // -m
     private static boolean showTrace = false;       // -t
 
+    private static ArrayList<Quote> quotes = null;
 
 
     public static void main(String[] args) throws IOException, BoilerpipeProcessingException {
@@ -69,15 +72,29 @@ public class Main {
         File output_directory = new File(path_input);
         File[] outputfiles = output_directory.listFiles();
 
+        quotes = new ArrayList<Quote>();
         for(File f: outputfiles){
 
-            // get an array of quotes form the file
-            QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder);
+            // get an array of quotes from the file
+            quotes.addAll(QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder));
 
         }
 
 
+        ////////// CONVERT QUOTES INTO INDEXABLE DOCUMENTS //////////
+        int i=1;
+        for(Quote q : quotes){
 
+            String path = "./indexable_docs/quote" + i + ".html";
+            File f = new File(path);
+
+            System.out.println("writing..." + path);
+            System.out.println(q.toString());
+
+            FileUtils.writeStringToFile(f, q.toString());
+
+            i++;
+        }
 
 
     }
