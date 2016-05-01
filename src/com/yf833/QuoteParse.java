@@ -112,6 +112,7 @@ public class QuoteParse {
 
         }
 
+        nameFinder.clearAdaptiveData();
         return quotes_list;
     }
 
