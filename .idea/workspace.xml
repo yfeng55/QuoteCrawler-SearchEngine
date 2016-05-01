@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dc7abb7-b249-45cf-8553-2d6a75f7c857" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_2016-presidential-candidates.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_fact-check.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_how-votes-for-trump-could-become-delegates-for-someone-else.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_michael-bloomberg.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_presidential-campaign-election-ads-2016.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_results?ref=politics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/politics_voters-of-the-people?ref=politics.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/Main.class" afterPath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/WebCrawler.class" afterPath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/WebCrawler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Main.java" afterPath="$PROJECT_DIR$/src/com/yf833/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" afterPath="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Util.java" afterPath="$PROJECT_DIR$/src/com/yf833/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" afterPath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9dc7abb7-b249-45cf-8553-2d6a75f7c857" name="Default" comment="" />
     <ignored path="quote-extract.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,8 +50,8 @@
       <file leaf-file-name="WebCrawler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6517572">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.24920128">
+              <caret line="13" column="76" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2830#3158#0" expanded="true" />
@@ -444,7 +427,7 @@
       <window_info id="Maven Projects" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1280" y="23" width="643" height="1057" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1280" y="23" width="643" height="1057" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -908,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6517572">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.24920128">
+          <caret line="13" column="76" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2830#3158#0" expanded="true" />
