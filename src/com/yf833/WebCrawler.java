@@ -5,6 +5,7 @@ import java.net.*;
 import java.io.*;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 
 
@@ -51,7 +52,9 @@ public class WebCrawler {
 
 
                 // write output to file
-                File outputfile = new File(path_input + "/" + link.getURL().getPath() + ".html");
+
+                String filename = query_input + "_" + FilenameUtils.getBaseName(link.getURL().toString()) + ".html";
+                File outputfile = new File(path_input + "/" +  filename);
                 FileUtils.writeStringToFile(outputfile, page);
                 downloadedPages++;
                 downloadedURLs.add(link.getURL());
@@ -134,15 +137,13 @@ public class WebCrawler {
 
                 System.out.println(url.toString().toLowerCase());
 
-
+                // check that the url contains 2016 and the provided query_input before adding
                 if (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) {
                     if(showTrace){
                         System.out.println("Adding to queue: " + url.toString() + " Score = " + score);
                     }
                     newURLs.add(new Link(url, score, newURLs.size()));
                 }
-
-
 
                 knownURLs.add(url);
 
