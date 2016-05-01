@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc7abb7-b249-45cf-8553-2d6a75f7c857" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Main.java" afterPath="$PROJECT_DIR$/src/com/yf833/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Quote.java" afterPath="$PROJECT_DIR$/src/com/yf833/Quote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_?ref=business.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_hackers-81-million-sneak-attack-on-world-banking.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_obama-talks-about-legacy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_valeant-pearson-ackman-hearing-congress-drug-prices.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crawler_output/politics_warren-buffett-vows-to-stick-to-friendly-strategy-rebuffing-activism.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" afterPath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
     </list>
     <ignored path="quote-extract.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,23 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35877863">
-              <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuoteParse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yf833/QuoteParse.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,64 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebCrawler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebCrawler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.3514377">
+              <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3220#3548#0" expanded="true" />
-                <element signature="e#3547#3548#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yf833/Quote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrawlerUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yf833/CrawlerUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yf833/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yf833/Link.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#426#427#0" expanded="false" />
-                <element signature="e#457#458#0" expanded="false" />
-                <element signature="e#484#485#0" expanded="false" />
-                <element signature="e#517#518#0" expanded="false" />
-                <element signature="e#546#547#0" expanded="false" />
-                <element signature="e#581#582#0" expanded="false" />
-                <element signature="e#622#623#0" expanded="false" />
-                <element signature="e#659#660#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -157,10 +79,10 @@
         <option value="$PROJECT_DIR$/src/com/yf833/Link.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/Util.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/CrawlerUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/Quote.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
       </list>
     </option>
   </component>
@@ -304,7 +226,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.yf833.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-q &quot;politics&quot; -docs &quot;./crawler_output&quot; -t -u &quot;http://www.nytimes.com/pages/business/index.html&quot; -m 20" />
+      <option name="PROGRAM_PARAMETERS" value="-q &quot;economy&quot; -docs &quot;./crawler_output&quot; -t -u &quot;http://www.nytimes.com/2016/05/01/magazine/is-the-us-ready-for-post-middle-class-politics.html&quot; -m 2" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -473,25 +395,25 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24966443" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.6226138" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="640" y="23" width="640" height="773" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2112788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1303" y="35" width="1051" height="1004" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.6226138" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="640" y="23" width="640" height="773" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="436" y="327" width="804" height="442" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -794,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawler_output/politics_.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/CrawlerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -842,22 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3220#3548#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/QuoteParse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <caret line="81" column="61" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -866,8 +769,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35877863">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3514377">
+          <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -67,9 +67,12 @@ public class WebCrawler {
                 //prepend the source url to the page (as the first line)
                 page = link.getURL().toString() + "\n" + page;
 
-                FileUtils.writeStringToFile(outputfile, page);
-                downloadedPages++;
-                downloadedURLs.add(link.getURL());
+                if(!page.isEmpty()){
+                    FileUtils.writeStringToFile(outputfile, page);
+                    downloadedPages++;
+                    downloadedURLs.add(link.getURL());
+                }
+
 
                 if(page.length() != 0 && downloadedPages<maxPages){
                     processPage(link, page);
@@ -143,9 +146,8 @@ public class WebCrawler {
             url = new URL(link.getURL(), newUrlString);
 
             if (!knownURLs.contains(url)) {
-                String filename =  url.getFile();
 
-                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain //
+                // check that the url contains 2016 or the provided query_input before adding and is a part of the specified domain //
                 if ( (url.toString().toLowerCase().contains(YEAR) || url.toString().toLowerCase().contains(query_input)) &&
                         CrawlerUtil.containsSafeDomain(url.toString().toLowerCase(), DOMAINS)) {
 
@@ -160,9 +162,8 @@ public class WebCrawler {
 
             }
             else if(!downloadedURLs.contains(url)){
-                String filename =  url.getFile();
 
-                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain //
+                // check that the url contains 2016 or the provided query_input before adding and is a part of the specified domain //
                 if ( (url.toString().toLowerCase().contains(YEAR) || url.toString().toLowerCase().contains(query_input)) &&
                         CrawlerUtil.containsSafeDomain(url.toString().toLowerCase(), DOMAINS)) {
 
