@@ -2,7 +2,428 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc7abb7-b249-45cf-8553-2d6a75f7c857" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote100_15925.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote101_10035.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote102_17661.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote103_17661.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote104_14784.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote105_14784.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote106_22410.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote107_22410.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote108_22410.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote109_20537.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_13419.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_15519.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_15685.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_17280.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_18731.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_21132.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_26021.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote10_29361.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote110_20537.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote111_28163.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote112_28163.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote113_25286.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote114_25286.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote115_25286.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote116_12912.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote117_11040.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote118_15788.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote119_23414.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_15685.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_18255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_21045.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_22028.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_23144.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_24149.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_26357.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote11_26484.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote120_23414.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote121_21542.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote122_21542.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote123_21542.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote124_29167.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote125_29167.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote126_29167.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote127_29167.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote128_26291.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote129_26291.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_11774.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_12809.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_14110.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_18255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_21045.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_22028.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_23144.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote12_26357.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote130_26291.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote131_13916.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote132_13916.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote133_13916.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote134_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote135_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote136_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote137_11546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote138_11546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote139_11546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_11774.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_12809.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_14110.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_18255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_19172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_23144.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_23480.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote13_29654.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote140_28670.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote141_28670.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote142_16295.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote143_16295.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote144_14423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote145_22049.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote146_24925.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote147_24925.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote148_12551.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_11105.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_11774.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_18425.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_19172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_20268.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_20434.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_28026.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote14_29654.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_11105.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_14544.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_18425.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_26798.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_27893.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_28026.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_28898.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote15_29654.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_14544.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_15652.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_26050.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_26798.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_27782.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_27893.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_28898.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote16_29233.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_15652.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_22004.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_22170.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_26050.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_26798.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_27782.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_28898.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote17_29233.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_12775.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_22170.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_23174.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_27782.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_28898.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_29233.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote18_29629.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_12775.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_15407.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_16523.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_16859.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_19293.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_23174.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote19_29629.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_13646.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_14403.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_18859.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_22186.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_25013.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_25017.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_25183.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote1_29370.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_10799.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_12775.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_15407.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_16523.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_16859.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_19293.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote20_29629.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_10799.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_12531.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_16523.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_16859.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_20401.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_23921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_26919.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote21_29629.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_11547.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_12531.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_13982.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_14651.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_20401.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote22_28927.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_11547.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_12531.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_13982.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_14651.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_20401.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote23_28927.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote24_14651.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote24_18529.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote24_20156.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote24_21608.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote24_29675.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote25_14651.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote25_18529.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote25_19735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote25_22302.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote25_29675.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote26_19735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote26_22276.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote26_22302.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote26_26154.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote26_29675.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote27_17300.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote27_19735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote27_22276.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote27_22302.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote27_23277.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote28_10903.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote28_17300.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote28_22276.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote28_27361.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote28_29927.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote29_16656.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote29_17300.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote29_19400.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote29_27361.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote29_29927.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_11526.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_12642.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_13646.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_15982.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_22306.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_26493.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_26934.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote2_29762.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote30_14423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote30_16656.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote30_19400.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote30_24484.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote30_29927.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote31_13780.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote31_14423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote31_19400.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote31_24484.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote31_27050.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote32_13780.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote32_14423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote32_19400.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote32_24484.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote32_27050.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote33_12110.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote33_13780.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote33_14423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote33_14676.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote33_27025.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote34_12110.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote34_14676.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote34_21405.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote34_22049.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote34_27025.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote35_12804.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote35_14255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote35_21405.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote35_22049.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote35_27025.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote36_12804.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote36_14255.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote36_20177.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote36_21405.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote36_27025.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote37_12804.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote37_20177.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote37_21405.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote37_21881.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote37_27025.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote38_19533.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote38_20177.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote38_20429.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote38_21881.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote38_25153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote39_19004.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote39_19533.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote39_20177.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote39_20429.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote39_25153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_11526.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_12642.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_14119.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_14560.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_15982.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_21272.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_22306.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote3_29626.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote40_19004.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote40_19533.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote40_20429.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote40_25153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote40_27802.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote41_17553.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote41_25153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote41_26630.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote41_27159.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote41_27802.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote42_27159.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote43_24282.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote44_24282.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote45_24282.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote46_11907.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote47_11907.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote48_26018.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote49_26018.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_14119.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_14560.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_15982.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_19152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_21272.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_22306.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_26749.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote4_29766.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote50_13643.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote51_13643.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote52_10766.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote53_10766.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote54_18392.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote55_18392.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote56_18392.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote57_16520.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote58_16520.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote59_24145.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_14560.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_15854.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_19152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_21272.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_23607.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_27753.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_29766.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote5_29932.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote60_24145.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote61_24145.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote62_21269.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote63_21269.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote64_21269.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote65_28894.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote66_19396.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote67_17524.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote68_25150.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote69_22273.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_12978.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_15379.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_17391.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_19152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_21272.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_23607.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_28670.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote6_29932.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote70_22273.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote71_22273.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote72_29899.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote73_29899.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote74_24418.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote75_24418.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote76_22546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote77_22546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote78_22546.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote79_10172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_12978.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_15379.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_17391.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_18395.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_19152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_21735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_28670.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote7_29932.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote80_10172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote81_10172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote82_27295.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote83_14921.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote84_13048.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote85_13048.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote86_20674.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote87_20674.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote88_25423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote89_25423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_13507.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_16296.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_17391.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_18395.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_19152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_20603.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_21735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote8_28060.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote90_25423.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote91_23551.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote92_23551.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote93_11176.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote94_11176.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote95_11176.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote96_28299.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote97_28299.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote98_15925.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote99_15925.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_13419.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_13507.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_15519.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_17280.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_18395.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_18731.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_21735.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/indexable_docs/quote9_28060.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/WebCrawler.class" afterPath="$PROJECT_DIR$/out/production/quote-extract/com/yf833/WebCrawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/Main.java" afterPath="$PROJECT_DIR$/src/com/yf833/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" afterPath="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_-jungle-book-holds-off-keanu-mother-s-day-to-stay-no-1.html" afterPath="$PROJECT_DIR$/crawler_output/_-jungle-book-holds-off-keanu-mother-s-day-to-stay-no-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_.html" afterPath="$PROJECT_DIR$/crawler_output/_.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews&amp;amp;bbgsum=DG-WS-09-13-ES-bbgmenu.html" afterPath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews&amp;amp;bbgsum=DG-WS-09-13-ES-bbgmenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews&amp;amp;bbgsum=DG-WS-CORE-bbgmenu.html" afterPath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews&amp;amp;bbgsum=DG-WS-CORE-bbgmenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews.html" afterPath="$PROJECT_DIR$/crawler_output/_?utm_source=bloomberg-menu&amp;amp;utm_medium=bbgnews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_abe-xi-summit-seen-at-g-20-as-japan-s-top-diplomat-visits-china.html" afterPath="$PROJECT_DIR$/crawler_output/_abe-xi-summit-seen-at-g-20-as-japan-s-top-diplomat-visits-china.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_aig-raises-1-25-billion-selling-picc-stock-near-bottom-of-range.html" afterPath="$PROJECT_DIR$/crawler_output/_aig-raises-1-25-billion-selling-picc-stock-near-bottom-of-range.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_berkshire-profit-climbs-8-2-to-5-59-billion-on-investments.html" afterPath="$PROJECT_DIR$/crawler_output/_berkshire-profit-climbs-8-2-to-5-59-billion-on-investments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_buffett-says-hedge-funds-get-unbelievable-fees-for-bad-results.html" afterPath="$PROJECT_DIR$/crawler_output/_buffett-says-hedge-funds-get-unbelievable-fees-for-bad-results.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_china-factory-stabilization-shows-little-need-for-added-stimulus.html" afterPath="$PROJECT_DIR$/crawler_output/_china-factory-stabilization-shows-little-need-for-added-stimulus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_cruz-again-bests-trump-at-most-weekend-delegate-contests.html" afterPath="$PROJECT_DIR$/crawler_output/_cruz-again-bests-trump-at-most-weekend-delegate-contests.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_cruz-says-trump-s-outsider-claim-is-greatest-fraud-on-voters.html" afterPath="$PROJECT_DIR$/crawler_output/_cruz-says-trump-s-outsider-claim-is-greatest-fraud-on-voters.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_donald-trump-will-get-crushed-in-the-fall-john-kasich-says.html" afterPath="$PROJECT_DIR$/crawler_output/_donald-trump-will-get-crushed-in-the-fall-john-kasich-says.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_gilead-judge-re-opens-case-amid-claim-merck-scientist-lied.html" afterPath="$PROJECT_DIR$/crawler_output/_gilead-judge-re-opens-case-amid-claim-merck-scientist-lied.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_how-pot-can-save-the-future-of-big-tobacco.html" afterPath="$PROJECT_DIR$/crawler_output/_how-pot-can-save-the-future-of-big-tobacco.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_index.html" afterPath="$PROJECT_DIR$/crawler_output/_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_iraq-oil-shipments-near-record-as-protests-intensify-in-baghdad.html" afterPath="$PROJECT_DIR$/crawler_output/_iraq-oil-shipments-near-record-as-protests-intensify-in-baghdad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_iraqi-protesters-to-end-sit-in-leave-baghdad-s-fortified-zone.html" afterPath="$PROJECT_DIR$/crawler_output/_iraqi-protesters-to-end-sit-in-leave-baghdad-s-fortified-zone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_large-diesel-vehicle-sales-allowed-in-delhi-after-green-levy.html" afterPath="$PROJECT_DIR$/crawler_output/_large-diesel-vehicle-sales-allowed-in-delhi-after-green-levy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_macau-gaming-revenue-falls-9-5-less-than-analysts-estimated.html" afterPath="$PROJECT_DIR$/crawler_output/_macau-gaming-revenue-falls-9-5-less-than-analysts-estimated.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_munger-warns-of-danger-facing-amex-while-buffett-affirms-support.html" afterPath="$PROJECT_DIR$/crawler_output/_munger-warns-of-danger-facing-amex-while-buffett-affirms-support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_n-korea-vows-to-rapidly-advance-nuclear-attack-capabilities.html" afterPath="$PROJECT_DIR$/crawler_output/_n-korea-vows-to-rapidly-advance-nuclear-attack-capabilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_nissan-recalls-nearly-4-million-cars-with-air-bag-problems.html" afterPath="$PROJECT_DIR$/crawler_output/_nissan-recalls-nearly-4-million-cars-with-air-bag-problems.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_postmates-said-to-seek-up-to-150-million-to-compete-in-delivery.html" afterPath="$PROJECT_DIR$/crawler_output/_postmates-said-to-seek-up-to-150-million-to-compete-in-delivery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_pro-rouhani-allies-win-most-seats-in-iranian-run-off-election.html" afterPath="$PROJECT_DIR$/crawler_output/_pro-rouhani-allies-win-most-seats-in-iranian-run-off-election.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_sanders-says-his-ideas-followers-are-future-of-democratic-party.html" afterPath="$PROJECT_DIR$/crawler_output/_sanders-says-his-ideas-followers-are-future-of-democratic-party.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_sec-rescinds-order-that-allowed-rattner-to-work-for-guggenheim.html" afterPath="$PROJECT_DIR$/crawler_output/_sec-rescinds-order-that-allowed-rattner-to-work-for-guggenheim.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_short-sellers-target-perrigo-after-ceo-exit-as-goldman-says-sell.html" afterPath="$PROJECT_DIR$/crawler_output/_short-sellers-target-perrigo-after-ceo-exit-as-goldman-says-sell.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_tanker-with-disputed-libyan-oil-returns-to-country-for-unloading.html" afterPath="$PROJECT_DIR$/crawler_output/_tanker-with-disputed-libyan-oil-returns-to-country-for-unloading.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_trump-leads-cruz-in-indiana-clinton-ahead-wsj-nbc-news.html" afterPath="$PROJECT_DIR$/crawler_output/_trump-leads-cruz-in-indiana-clinton-ahead-wsj-nbc-news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_trump-says-clinton-wouldn-t-be-in-presidential-race-if-male.html" afterPath="$PROJECT_DIR$/crawler_output/_trump-says-clinton-wouldn-t-be-in-presidential-race-if-male.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_tweet?url=http%3A%2F%2Fwww.bloomberg.html" afterPath="$PROJECT_DIR$/crawler_output/_tweet?url=http%3A%2F%2Fwww.bloomberg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_u-a-e-stocks-lead-gulf-equity-slump-as-results-weigh-on-market.html" afterPath="$PROJECT_DIR$/crawler_output/_u-a-e-stocks-lead-gulf-equity-slump-as-results-weigh-on-market.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_u-s-jobs-abe-abroad-fed-presidents-tesla-week-ahead-may-2-7.html" afterPath="$PROJECT_DIR$/crawler_output/_u-s-jobs-abe-abroad-fed-presidents-tesla-week-ahead-may-2-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_united-ex-ceo-smisek-received-36-8-million-after-his-ouster.html" afterPath="$PROJECT_DIR$/crawler_output/_united-ex-ceo-smisek-received-36-8-million-after-his-ouster.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_urgent-csx-train-derails-in-washington-dc-possible-hazardous-leak.html" afterPath="$PROJECT_DIR$/crawler_output/_urgent-csx-train-derails-in-washington-dc-possible-hazardous-leak.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_urgent-malia-obama-to-attend-harvard-in-2017-after-taking-year-off.html" afterPath="$PROJECT_DIR$/crawler_output/_urgent-malia-obama-to-attend-harvard-in-2017-after-taking-year-off.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_world-s-longest-negative-rate-experiment-shows-perversions-ahead.html" afterPath="$PROJECT_DIR$/crawler_output/_world-s-longest-negative-rate-experiment-shows-perversions-ahead.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_www.bloomberg.html" afterPath="$PROJECT_DIR$/crawler_output/_www.bloomberg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_output/_yen-gains-strength-as-boj-inaction-leaves-disinflation-as-driver.html" afterPath="$PROJECT_DIR$/crawler_output/_yen-gains-strength-as-boj-inaction-leaves-disinflation-as-driver.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quote-extract.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +449,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +460,8 @@
       <file leaf-file-name="WebCrawler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34504792">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44089457">
+              <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +495,7 @@
         <option value="$PROJECT_DIR$/src/com/yf833/CrawlerUtil.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/QuoteParse.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/Quote.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/yf833/Main.java" />
         <option value="$PROJECT_DIR$/src/com/yf833/WebCrawler.java" />
       </list>
@@ -219,7 +641,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.yf833.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-q &quot;&quot; -docs &quot;./crawler_output&quot; -t -m 50 -u &quot;http://www.bloomberg.com&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="-q &quot;&quot; -docs &quot;./crawler_output&quot; -t -m 50 -u &quot;http://www.cnn.com&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -400,7 +822,7 @@
       <window_info id="Maven Projects" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45035744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1303" y="35" width="1051" height="1004" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.67445254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1303" y="35" width="1051" height="1004" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -768,10 +1190,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047923323">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -780,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yf833/WebCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34504792">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.44089457">
+          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

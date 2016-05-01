@@ -33,7 +33,7 @@ public class Main {
 //    public static final String input_path = "./sample_articles/the-great-republican-revolt_theatlantic.html";
 
 
-    private static String url_input;                // -u
+    private static String url_input = "";                // -u
     private static String path_input;               // -docs
     private static String query_input = "";         // -q
     private static int maxPages = 10;                // -m

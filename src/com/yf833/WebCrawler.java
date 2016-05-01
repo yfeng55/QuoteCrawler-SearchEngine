@@ -42,6 +42,9 @@ public class WebCrawler {
         DOMAINS.add("www.nytimes.com");
         DOMAINS.add("www.theatlantic.com");
         DOMAINS.add("www.bloomberg.com");
+        DOMAINS.add("www.forbes.com");
+        DOMAINS.add("www.cnn.com");
+        DOMAINS.add("www.cnbc.com");
     }
 
 
@@ -91,7 +94,7 @@ public class WebCrawler {
 
 
     // initialize: set the starting point of the crawler; set proxy and port settings
-    private void initialize() {
+    private void initialize() throws MalformedURLException {
 
         knownURLs = new HashSet<URL>();
         downloadedURLs = new HashSet<URL>();
@@ -109,18 +112,30 @@ public class WebCrawler {
         newURLs = new PriorityQueue<Link>(11, comparator);
 
 
-        URL url;
-        try{
-            url = new URL(url_input);
-        }catch (MalformedURLException e) {
-            System.out.println("Invalid starting URL " + url_input);
-            return;
+        if(url_input.equals("")){
+            // starting points for crawl //
+            ArrayList<URL> starting_urls = new ArrayList<URL>();
+            try {
+                starting_urls.add(new URL("http://www.bloomberg.com"));
+                starting_urls.add(new URL("http://www.nytimes.com"));
+                starting_urls.add(new URL("http://www.theatlantic.com"));
+            } catch (MalformedURLException e) {
+                System.out.println("ERROR: invalid starting url");
+            }
+
+            for(URL url : starting_urls){
+                knownURLs.add(url);
+                newURLs.add(new Link(url, newURLs.size()));
+                System.out.println("Starting at Initial URL..." + url.toString());
+            }
+        }
+        else{
+            URL starting_url = new URL(url_input);
+            knownURLs.add(starting_url);
+            newURLs.add(new Link(starting_url, newURLs.size()));
+            System.out.println("Starting at Initial URL..." + starting_url.toString());
         }
 
-        knownURLs.add(url);
-        newURLs.add(new Link(url, newURLs.size()));
-
-//        System.out.println("Starting search: Initial URL " + url.toString());
 
         //Behind a firewall set your proxy and port here!
         Properties props= new Properties(System.getProperties());
