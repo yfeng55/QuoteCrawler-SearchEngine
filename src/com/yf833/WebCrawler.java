@@ -19,7 +19,7 @@ public class WebCrawler {
 
     public static final String DISALLOW = "Disallow:";
     public static final int MAXSIZE = 20000000;            // Max size (# of bits) of a file that can be downloaded
-    public static final String DOMAIN = "www.nytimes.com";
+    public static HashSet<String> DOMAINS = null;
 
     PriorityQueue<Link> newURLs;                         // URLs to be searched (and downloaded)
     HashSet<URL> knownURLs;                             // Set of known URLs (already downloaded)
@@ -34,6 +34,11 @@ public class WebCrawler {
         this.query_input = q.toLowerCase();
         this.maxPages = m;
         this.showTrace = t;
+
+        // set allowed domains //
+        DOMAINS = new HashSet<>();
+        DOMAINS.add("www.nytimes.com");
+        DOMAINS.add("www.theatlantic.com");
     }
 
 
@@ -139,7 +144,9 @@ public class WebCrawler {
                 System.out.println(url.toString().toLowerCase());
 
                 // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain
-                if ( (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) && url.toString().toLowerCase().contains(DOMAIN)) {
+                if ( (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) &&
+                        CrawlerUtil.containsSafeDomain(url.toString().toLowerCase(), DOMAINS)) {
+
                     if(showTrace){
                         System.out.println("Adding to queue: " + url.toString() + " Score = " + score);
                     }
@@ -460,7 +467,6 @@ public class WebCrawler {
 
         return true;
     }
-
 
 
 

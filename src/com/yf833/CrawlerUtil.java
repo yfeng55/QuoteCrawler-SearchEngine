@@ -2,6 +2,7 @@ package com.yf833;
 
 import org.jsoup.Jsoup;
 
+import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -68,5 +69,18 @@ public class CrawlerUtil {
         return result;
 
     }
+
+
+    public static boolean containsSafeDomain(String domain, HashSet<String> safe_domains){
+
+        for(String s : safe_domains){
+            if(domain.contains(s)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 
 }

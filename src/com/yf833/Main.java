@@ -20,7 +20,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static final String input_path = "./sample_articles/hilary-clinton-new-york_nytimes.html";
+//    public static final String input_path = "./sample_articles/hilary-clinton-new-york_nytimes.html";
 //    public static final String input_path = "./sample_articles/bernie-sanders-hillary-clinton-dnc_theatlantic.html";
 //    public static final String input_path = "./sample_articles/donald-trump-foreign-policy_nytimes.html";
 //    public static final String input_path = "./sample_articles/donald-trump-interview-highlights_nytimes.html";
