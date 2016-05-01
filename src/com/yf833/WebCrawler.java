@@ -19,6 +19,7 @@ public class WebCrawler {
 
     public static final String DISALLOW = "Disallow:";
     public static final int MAXSIZE = 20000000;            // Max size (# of bits) of a file that can be downloaded
+    public static final String DOMAIN = "www.nytimes.com";
 
     PriorityQueue<Link> newURLs;                         // URLs to be searched (and downloaded)
     HashSet<URL> knownURLs;                             // Set of known URLs (already downloaded)
@@ -68,7 +69,7 @@ public class WebCrawler {
 
         }
 
-//        System.out.println("Search complete.");
+        System.out.println("Crawl complete.");
 
     }
 
@@ -137,8 +138,8 @@ public class WebCrawler {
 
                 System.out.println(url.toString().toLowerCase());
 
-                // check that the url contains 2016 and the provided query_input before adding
-                if (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) {
+                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain
+                if ( (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) && url.toString().toLowerCase().contains(DOMAIN)) {
                     if(showTrace){
                         System.out.println("Adding to queue: " + url.toString() + " Score = " + score);
                     }
@@ -434,6 +435,9 @@ public class WebCrawler {
 
         }catch(IOException e){
             return true;                    // if there is no robots.txt file, it is OK to search
+        }
+        catch(StringIndexOutOfBoundsException e){
+            return true;
         }
 
 //        if(showTrace){ System.out.println(strCommands); }

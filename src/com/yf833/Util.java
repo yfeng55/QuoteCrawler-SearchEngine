@@ -70,9 +70,14 @@ public class Util {
     //get the next closed text position
     public static int getCloseQuotePosition(String[] maintext_tokens, int iStart){
         int i=iStart;
-        while(!maintext_tokens[i].equals("”")){
-            i++;
+
+        try{
+            while(!maintext_tokens[i].equals("”")){
+                i++;
+            }
+        }catch(ArrayIndexOutOfBoundsException e){
         }
+
         return i;
     }
 
@@ -82,9 +87,13 @@ public class Util {
         String quote_text = "";
 
         int i=iStart;
-        while(!maintext_tokens[i].equals("”")){
-            quote_text += maintext_tokens[i] + " ";
-            i++;
+
+        try{
+            while(!maintext_tokens[i].equals("”")){
+                quote_text += maintext_tokens[i] + " ";
+                i++;
+            }
+        }catch(ArrayIndexOutOfBoundsException e){
         }
 
         return quote_text;

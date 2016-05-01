@@ -1,8 +1,20 @@
 package com.yf833;
 
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
+import opennlp.tools.chunker.Chunker;
+import opennlp.tools.chunker.ChunkerME;
+import opennlp.tools.chunker.ChunkerModel;
+import opennlp.tools.cmdline.postag.POSModelLoader;
+import opennlp.tools.namefind.NameFinderME;
+import opennlp.tools.namefind.TokenNameFinderModel;
+import opennlp.tools.postag.POSModel;
+import opennlp.tools.postag.POSTaggerME;
+import opennlp.tools.tokenize.Tokenizer;
+import opennlp.tools.tokenize.TokenizerME;
+import opennlp.tools.tokenize.TokenizerModel;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 
@@ -40,12 +52,32 @@ public class Main {
 
         ////////// PARSE ALL OUTPUT FILES FOR QUOTES //////////
 
+        // initialize openNLP classifiers //
+        TokenizerModel tokenModel = new TokenizerModel(new FileInputStream(new File("./en-token.bin")));
+        Tokenizer tokenizer = new TokenizerME(tokenModel);
 
-        // read in input file
-//        File input_file = new File(input_path);
+        POSModel posModel = new POSModelLoader().load(new File("./en-pos-maxent.bin"));
+        POSTaggerME posTagger = new POSTaggerME(posModel);
 
-        // get an array of quotes form the file
-//        QuoteParse.getQuotes(input_file);
+        ChunkerModel chunkerModel = new ChunkerModel(new FileInputStream(new File("./en-chunker.bin")));
+        Chunker chunker = new ChunkerME(chunkerModel);
+
+        TokenNameFinderModel nameModel = new TokenNameFinderModel(new FileInputStream(new File("./en-ner-person.bin")));
+        NameFinderME nameFinder = new NameFinderME(nameModel);
+
+
+        File output_directory = new File(path_input);
+        File[] outputfiles = output_directory.listFiles();
+
+        for(File f: outputfiles){
+
+            // get an array of quotes form the file
+            QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder);
+
+        }
+
+
+
 
 
     }

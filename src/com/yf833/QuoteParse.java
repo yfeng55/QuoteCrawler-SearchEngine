@@ -30,7 +30,7 @@ public class QuoteParse {
     public static int QUOTE_TOKEN_MIN = 3; // denotes the minimum number of tokens a quote needs in order to be considered valid
 
     // return an arraylist of quotes extracted from the given page
-    public static ArrayList<Quote> getQuotes(File input_file) throws IOException, BoilerpipeProcessingException {
+    public static ArrayList<Quote> getQuotes(File input_file, Tokenizer tokenizer, POSTaggerME posTagger, Chunker chunker, NameFinderME nameFinder) throws IOException, BoilerpipeProcessingException {
 
         ArrayList<Quote> quotes_list = new ArrayList<Quote>();
 
@@ -44,28 +44,20 @@ public class QuoteParse {
 
 
         // (3) tokenize the text //
-        TokenizerModel tokenModel = new TokenizerModel(new FileInputStream(new File("./en-token.bin")));
-        Tokenizer tokenizer = new TokenizerME(tokenModel);
         String[] maintext_tokens = tokenizer.tokenize(maintext);
         System.out.println(Arrays.toString(maintext_tokens));
         System.out.println("QUOTE COUNT (CANDIDATES): " + Util.getNumberOfQuotes(maintext_tokens));
 
 
-        // (4) initialize a part-of-speech tagger //
-        POSModel posModel = new POSModelLoader().load(new File("./en-pos-maxent.bin"));
-        POSTaggerME posTagger = new POSTaggerME(posModel);
+        // (4) get part-of-speech tags //
         String[] maintext_tags = posTagger.tag(maintext_tokens);
 
 
         // (5) chunk the text //
-        ChunkerModel chunkerModel = new ChunkerModel(new FileInputStream(new File("./en-chunker.bin")));
-        Chunker chunker = new ChunkerME(chunkerModel);
         String[] maintext_chunks = chunker.chunk(maintext_tokens, maintext_tags);
 
 
         // (6) locate named entities in the text //
-        TokenNameFinderModel nameModel = new TokenNameFinderModel(new FileInputStream(new File("./en-ner-person.bin")));
-        NameFinderME nameFinder = new NameFinderME(nameModel);
         Span[] namespans = nameFinder.find(maintext_tokens);   //contains start-end indices of names in maintext_tokens[]
 
 
