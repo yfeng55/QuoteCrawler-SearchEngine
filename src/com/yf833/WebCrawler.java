@@ -19,7 +19,9 @@ public class WebCrawler {
 
     public static final String DISALLOW = "Disallow:";
     public static final int MAXSIZE = 20000000;            // Max size (# of bits) of a file that can be downloaded
+
     public static HashSet<String> DOMAINS = null;
+    public static final String YEAR = "2016";              // look for articles with this year in the url
 
     PriorityQueue<Link> newURLs;                         // URLs to be searched (and downloaded)
     HashSet<URL> knownURLs;                             // Set of known URLs (already downloaded)
@@ -137,14 +139,10 @@ public class WebCrawler {
             url = new URL(link.getURL(), newUrlString);
 
             if (!knownURLs.contains(url)) {
-
                 String filename =  url.getFile();
-                int iSuffix = filename.lastIndexOf("htm");
 
-                System.out.println(url.toString().toLowerCase());
-
-                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain
-                if ( (url.toString().toLowerCase().contains("2016") || url.toString().toLowerCase().contains(query_input)) &&
+                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain //
+                if ( (url.toString().toLowerCase().contains(YEAR) || url.toString().toLowerCase().contains(query_input)) &&
                         CrawlerUtil.containsSafeDomain(url.toString().toLowerCase(), DOMAINS)) {
 
                     if(showTrace){
@@ -152,15 +150,17 @@ public class WebCrawler {
                     }
                     newURLs.add(new Link(url, score, newURLs.size()));
                 }
+                /////
 
                 knownURLs.add(url);
 
             }
             else if(!downloadedURLs.contains(url)){
                 String filename =  url.getFile();
-                int iSuffix = filename.lastIndexOf("htm");
 
-                if ((iSuffix == filename.length() - 3) || (iSuffix == filename.length() - 4)) {
+                // check that the url contains 2016 and the provided query_input before adding and is a part of the specified domain //
+                if ( (url.toString().toLowerCase().contains(YEAR) || url.toString().toLowerCase().contains(query_input)) &&
+                        CrawlerUtil.containsSafeDomain(url.toString().toLowerCase(), DOMAINS)) {
 
                     if(score > 0 && showTrace){ System.out.println("Adding " + score + " to score of " + url.toString()); }
 
@@ -169,20 +169,14 @@ public class WebCrawler {
                     int oldscore = 0;
                     Link[] newURLs_arr = newURLs.toArray(new Link[newURLs.size()]);
                     for(Link a : newURLs_arr){
-//                        System.out.print(a.toString());
-                        if(a.getURL().equals(url)){
-//                            System.out.println("OLD SCORE: " + a.getScore());
-                            oldscore = a.getScore();
-                        }
+                        if(a.getURL().equals(url)){ oldscore = a.getScore(); }
                     }
-//                    System.out.println();
 
                     newURLs.remove(new Link(url, score, newURLs.size()));
-
-
                     newURLs.add(new Link(url, oldscore + score, newURLs.size()));
 
                 }
+                /////
             }
 
 
