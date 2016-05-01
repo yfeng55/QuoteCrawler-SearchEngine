@@ -32,4 +32,20 @@ public class Quote {
     }
 
 
+    public String toHTML(){
+        String output = "<html><head><title>" + this.speaker + "</title></head><body>";
+
+        output += "<p class='quotetext'>" + this.text + "</p>";
+        output += "<p class='quotespeaker'>" + this.speaker + "</p>";
+        output += "<p class='quotesubject'>" + this.subject + "</p>";
+        output += "<p class='quotesentiment'>" + this.sentiment + "</p>";
+        output += "<p class='quotesource'>" + this.source + "</p>";
+
+        output += "</body></html>";
+
+        return output;
+    }
+
+
+
 }

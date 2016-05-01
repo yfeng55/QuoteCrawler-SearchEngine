@@ -13,11 +13,13 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Main {
@@ -85,13 +87,14 @@ public class Main {
         int i=1;
         for(Quote q : quotes){
 
-            String path = "./indexable_docs/quote" + i + ".html";
+//            String path = "./indexable_docs/quote" + i + "_" + FilenameUtils.getBaseName(q.source) + ".html";
+            String path = "./indexable_docs/quote" + i + "_" + getRandom() + ".html";
             File f = new File(path);
 
             System.out.println("writing..." + path);
             System.out.println(q.toString());
 
-            FileUtils.writeStringToFile(f, q.toString());
+            FileUtils.writeStringToFile(f, q.toHTML());
 
             i++;
         }
@@ -133,6 +136,11 @@ public class Main {
         System.out.println("-t: " + showTrace);
     }
 
+
+    public static int getRandom() {
+        Random r = new Random(System.currentTimeMillis());
+        return 10000 + r.nextInt(20000);
+    }
 
 
 }
