@@ -41,6 +41,7 @@ public class WebCrawler {
         DOMAINS = new HashSet<>();
         DOMAINS.add("www.nytimes.com");
         DOMAINS.add("www.theatlantic.com");
+        DOMAINS.add("www.bloomberg.com");
     }
 
 
@@ -64,10 +65,11 @@ public class WebCrawler {
                 String filename = query_input + "_" + FilenameUtils.getBaseName(link.getURL().toString()) + ".html";
                 File outputfile = new File(path_input + "/" +  filename);
 
-                //prepend the source url to the page (as the first line)
-                page = link.getURL().toString() + "\n" + page;
-
                 if(!page.isEmpty()){
+
+                    //prepend the source url to the page (as the first line)
+                    page = link.getURL().toString() + "\n" + page;
+
                     FileUtils.writeStringToFile(outputfile, page);
                     downloadedPages++;
                     downloadedURLs.add(link.getURL());
@@ -199,13 +201,16 @@ public class WebCrawler {
         try{
             // try opening the URL
             URLConnection urlConnection = url.openConnection();
+            urlConnection.setConnectTimeout(3000);
+            urlConnection.setReadTimeout(3000);
+
 
             urlConnection.setAllowUserInteraction(false);
 
             InputStream urlStream = url.openStream();
             // search the input stream for links
             // first, read in the entire URL
-            byte b[] = new byte[1000];
+            byte b[] = new byte[10000];
             int numRead = urlStream.read(b);
             String content = new String(b, 0, numRead);
 
@@ -225,7 +230,9 @@ public class WebCrawler {
         }catch (IOException e){
             System.out.println("ERROR: couldn't open URL ");
             return "";
-        }catch(StringIndexOutOfBoundsException e){
+        }catch(StringIndexOutOfBoundsException e) {
+            System.out.println("ERROR: string out of bounds exception");
+            //e.printStackTrace();
             return "";
         }
 

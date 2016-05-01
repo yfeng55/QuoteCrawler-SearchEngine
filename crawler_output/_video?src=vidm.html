@@ -1,0 +1,1692 @@
+http://www.nytimes.com/video?src=vidm
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class=" ie ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>     <html class=" ie ie7 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 8]>     <html class="i e ie8 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 9]>     <html class=" ie ie9 lt-ie9"> <![endif]-->
+<!--[if gt IE 9]>  <html class=" ie"> <![endif]-->
+<!--[if !IE]><!--> <html class=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"14c5fcc4e9","applicationID":"4874522","applicationTime":238.150422,"transactionName":"b1EAYhEAXBUFBhFdXVYbJ04TE1cVFw8WG3V9YE0ZFQhWAws=","queueTime":0,"ttGuid":"10fef42b48c8600","agentToken":null}; (window.NREUM||(NREUM={})).loader_config={xpid:"UwQDWVZXGwcIU1VXBQM="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script>
+        <title>Times Video - NYTimes.com</title>
+        <link rel="shortcut icon" href="http://css.nyt.com/images/icons/nyt.ico" />
+        <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+        <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+        <link rel="schema.iptc" href="http://iptc.org/std/nar/2006-10-01/" />
+        <link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.1/" />
+        <link rel="dc.rights copyright" href="http://www.nytimes.com/content/help/rights/copyright/copyright-notice.html" />
+        <link rel="canonical" href="http://www.nytimes.com/video" />
+        <meta name="description" content="">
+        <meta name="viewport" id="viewport" content="">
+        <meta http-equiv="content-language" content="en" />
+        <!-- Analytics Tags -->
+        <meta name="sourceApp" content="nytv">
+        <meta name="CG" content="Video">
+        <meta name="SCG" content="Library">
+        <meta name="PT" content="Multimedia">
+        <meta name="PST" content="Video">
+        <meta name="PSST" content="Playlist">
+            <!-- Robots specific -->
+            <meta name="Googlebot" content="index,follow">
+            <meta name="MSNBot" content="index,follow">
+            <!-- Force directories (ie: DMOZ) to use updated title info -->
+            <meta name="robots" content="noodp,noydir" />
+        <meta name="keywords" content="new york times,news,breaking news,video news"/>
+        <meta name="news_keywords" content=",new york times,news,breaking news,video news">
+        <meta name="distribution" content="global">
+        <meta name="geo.region" content="US-NY">
+        <meta name="geo.placename" content="The New York Times Company">
+        <meta name="geo.position" content="40.755978;-73.990396">
+        <meta name="ICBM" content="40.755978, -73.990396">
+        <meta name="language" content="English">
+        <meta name="rating" content="general">
+
+        <!-- env variables -->
+        <meta name="app-base-domain" content="http://www.nytimes.com">
+        <meta name="app-js-domain" content="//js.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo">
+        <meta name="app-js-secure-domain" content="https://sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo">
+        <meta name="app-legacy-js-domain" content="http://js.nyt.com">
+        <meta name="app-css-domain" content="//css.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo">
+        <meta name="app-legacy-css-domain" content="http://css.nyt.com">
+        <meta name="app-images-domain" content="http://graphics8.nytimes.com/">
+        <meta name="app-images-secure-domain" content="https://sv.nyt.com/">
+        <meta name="app-html-domain" content="//sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo">
+        <meta name="app-html-secure-domain" content="https://sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo">
+        <meta name="cherry-api-domain" content="http://www.nytimes.com">
+        <meta name="video-factory-url" content="">
+        <meta name="adx-url" content="https://www.nytimes.com/svc/adxmulti">
+        <meta name="data-env" content="production">
+        <meta name="simple-reach-pid" content="526e7abc97b0c9f447000001">
+        <meta name="dfp-base-ad-unit-path" content="/29390238/nyt/video">
+
+
+        <meta name="version-js" content="4.7.17-990_1461860106_2016-04-28T16:15:06Z">
+        <meta name="version-css" content="4.7.17-990_1461860106_2016-04-28T16:15:06Z">
+    
+    
+	
+
+
+
+    
+    
+        
+    
+
+
+<meta property="fb:app_id" content="9869919170" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.nytimes.com/video" />
+<meta property="og:title" content="Times Video - NYTimes.com" />
+<meta property="og:image" content="http://graphics8.nytimes.com//images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine768.jpg">
+
+<meta property="og:description" content="" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:src" content="http://graphics8.nytimes.com//images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine310.jpg">
+<meta name="twitter:site" content="@nytimes">
+<meta name="twitter:url" content="http://www.nytimes.com/video" />
+<meta name="twitter:title" content="Times Video - NYTimes.com" />
+<meta name="twitter:description" content="" />
+
+<meta name="thumbnail" content="http://graphics8.nytimes.com//images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine768.jpg">
+
+
+
+    
+        <meta name="publish_url" content="http://www.nytimes.com/video/latest-video">
+    
+
+    
+        <link rel="stylesheet" type="text/css" href="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/css/base.min.css?v=4.7.17-990_1461860106_2016-04-28T16:15:06Z">
+    <link rel="stylesheet" type="text/css" href="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/css/home.min.css?v=4.7.17-990_1461860106_2016-04-28T16:15:06Z" />
+    <style type="text/css">
+        .vhs-media-action-overlay {display: none;}
+    </style>
+
+    
+        <script>/* nyt-a: 77ce06596d9ffb4e86aae98ecda7aedb */var NYTD=NYTD||{};NYTD.Experiment=function(t,e,n,r,i){"use strict";function o(t){var e=r[t]||{};return e[1]&&a(t,e[0]),e[0]||null}function a(e){2==arguments.length&&(e={},e[arguments[0]]=arguments[1]);for(var n in e){var r=e[n]||"0";_+="subject=ab-alloc&test="+encodeURIComponent(n)+"&variant="+encodeURIComponent(r)+"&instant=1&skipAugment=true\n"}s||(s=t.setTimeout(u,0))}function u(){if(s=0,_){var e=new t.XMLHttpRequest;e.withCredentials=!0,e.open("POST",i),e.send(_),_=""}}var s,_="";return o.expose=o,e&&t.document.documentElement.setAttribute("data-nyt-ab",e),a(n),o}(this,"TV_DomAA=A TV_LoopingCover=0 TV_LoopingCover2=1",{"TV_DomAA":"A","TV_LoopingCover2":"1"},{"TV_JsAA":["A",1],"TV_LoopingCover":["0"],"TV_LoopingCover2":["1",1]},"//et.nytimes.com");</script>
+
+        <script type="text/javascript" src="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/lib/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript">
+           (function(){
+            var isTablet = false;
+            var ua = navigator.userAgent;
+            if (ua.match(/iP(a|ro)d/i) || (ua.match(/tablet/i) && !ua.match(/RX-34/i)) || ua.match(/FOLIO/i)) {
+                isTablet = true;
+            } else if (ua.match(/Linux/i) && ua.match(/Android/i) && !ua.match(/Fennec|mobi|HTC Magic|HTCX06HT|Nexus One|SC-02B|fone 945/i)) {
+                isTablet = true;
+            } else if (ua.match(/Kindle/i) || (ua.match(/Mac OS/i) && ua.match(/Silk/i))) {
+                isTablet = true;
+            } else if (ua.match(/GT-P10|SC-01C|SHW-M180S|SGH-T849|SCH-I800|SHW-M180L|SPH-P100|SGH-I987|zt180|HTC( Flyer|_Flyer)|Sprint ATP51|ViewPad7|pandigital(sprnova|nova)|Ideos S7|Dell Streak 7|Advent Vega|A101IT|A70BHT|MID7015|Next2|nook/i) || (ua.match(/MB511/i) && ua.match(/RUTEM/i))) {
+                isTablet = true;
+            }
+            if (isTablet) {
+                var viewPort = document.getElementById("viewport");
+                viewPort.setAttribute('content', 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1');
+            }
+           })();
+        </script><script type="text/javascript">
+    (function() {
+    var config = {
+        kitId: 'fdj3cyx',
+        scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+</script>
+
+    <script id="nyt-features" type="application/json">{"socialFollowModule":false,"bannerMobile":true,"socialReferrals":true,"topCard":true,"mobileBrandedPlaylist":false,"vhsLiveFlashSupport":true,"vhsThumbsOnSeekSupport":true,"newPlaylist":true,"dfpAds":false,"imax":true}</script>
+
+
+    </head>
+            
+                
+                    <body class="doc-container   home-page channel-name-default channel-id-default">
+                
+            
+        
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+            <div class="header-container ">
+                <header id="masthead" class="masthead header wrapper clearfix" role="banner">
+
+    <div class="container">
+
+        <div class="quick-navigation button-group">
+            <button class="button sections-button" title="Channels &amp; Shows">
+                <span class="button-text show-text">Channels</span> <span class="button-text show-text secondary">&amp; Shows</span>
+                <i class="icon"></i>
+            </button>
+            <button class="button home-button" data-href="http://www.nytimes.com/" title="Home" id="home-btn">
+                <i class="icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button" title="Search"  id="search-btn">
+                <i class="icon"></i>
+                <span class="button-text">Search</span>
+            </button>
+        </div><!-- close button-group -->
+
+        <div class="branding">
+          
+            
+			  
+                <a href="http://www.nytimes.com/video" title="TimesVideo" alt="TimesVideo" class='home' id="timesvideo-btn">
+                    <span class='logo'><span class='first'>Times</span><span class='second'>Video</span></span>
+                </a>
+              
+            
+          
+        </div><!-- close branding -->
+
+        <div class="user-tools">
+            <div id="Bar1" class="user-subscriptions"></div>
+
+            <div class="user-tools-button-group button-group">
+                <button class="button login-button login-modal-trigger" title="Log In">Log In</button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+
+    </div><!-- close container -->
+
+    <div class="cn-navigation">
+    <div class="cn-channels">
+        <h5 class="title">Channels</h5>
+        <ul class="channel-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            
+                
+            
+                
+                    <li class="channel-item" data-id="100000002797598"> <a href="/video/us-politics/" itemprop="url"><span itemprop="name">U.S. &amp; Politics</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622205"> <a href="/video/world/" itemprop="url"><span itemprop="name">International</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622241"> <a href="/video/n-y-region/" itemprop="url"><span itemprop="name">New York</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="100000001150263"> <a href="/video/op-docs/" itemprop="url"><span itemprop="name">Op-Docs</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622299"> <a href="/video/opinion/" itemprop="url"><span itemprop="name">Opinion</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="100000002500298"> <a href="/video/times-documentaries/" itemprop="url"><span itemprop="name">Times Documentaries</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622255"> <a href="/video/business/" itemprop="url"><span itemprop="name">Business</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622271"> <a href="/video/technology/" itemprop="url"><span itemprop="name">Technology</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622313"> <a href="/video/arts/" itemprop="url"><span itemprop="name">Culture</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622321"> <a href="/video/style/" itemprop="url"><span itemprop="name">Style</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194812905212"> <a href="/video/t-magazine/" itemprop="url"><span itemprop="name">T Magazine</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622283"> <a href="/video/health/" itemprop="url"><span itemprop="name">Health</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194820411913"> <a href="/video/dining-and-wine/" itemprop="url"><span itemprop="name">Food</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622333"> <a href="/video/travel/" itemprop="url"><span itemprop="name">Travel</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622289"> <a href="/video/sports/" itemprop="url"><span itemprop="name">Sports</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622347"> <a href="/video/real-estate/" itemprop="url"><span itemprop="name">Real Estate</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622277"> <a href="/video/science/" itemprop="url"><span itemprop="name">Science</span> <i class="icon"></a></i></li> 
+                
+            
+                
+                    <li class="channel-item" data-id="1194811622351"> <a href="/video/magazine/" itemprop="url"><span itemprop="name">Magazine</span> <i class="icon"></a></i></li> 
+                
+            
+        </ul>
+    </div>
+    <div class="cn-slide-out">
+
+        <div class="cn-shows">
+
+        </div>
+
+        <div class="cn-videos">
+            <h5 class="title">Recent <span></span> Videos</h5>
+            <div class="cn-playlist">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</header>
+            </div>
+            
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "http://www.nytimes.com/video",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://query.nytimes.com/search/sitesearch/?vertical=video/#/{search_string}/",
+            "query-input": "required name=search_string"
+        }
+    }
+    </script>
+    <script type="text/javascript">
+        var playlistId = 1194811622182;
+    </script>
+    
+<div class="carousel-container">
+    <div class="carousel-area">
+        <div class="carousel-wrapper">
+            <div class="carousel-inner">
+                
+                <div id="item-1" class="carousel-item" data-id="100000004362198">
+                    <div class="carousel-item-thumb">
+                        <a href="/video/us/100000004362198/hunting-for-venomous-pests.html?playlistId=1194811622182" class="carousel-background loading" title="The Scorpions Are Out Early This Year">
+                            <div id="carousel_video_1" class="carousel-video"><span class="carousel-video-ratio"></span></div>
+                            <img class="carousel-img" style="display: none" src="http://graphics8.nytimes.com//images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoFifteenBySeven1305.jpg" />
+                            <span class="carousel-image-ratio"></span>
+                            <span class="carousel-item-content show-content">
+                                <h2>The Scorpions Are Out Early This Year</h2>
+                                <span class="carousel-kicker">
+                                    
+                                        <h3 class="kicker-channel">Science</h3>
+                                    
+                                    
+                                        <h3 class="kicker-duration">0:49</h3>
+                                    
+                                </span>
+                                <span class="carousel-item-play  show-play"  >
+                                    <i class="icon"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                </div>
+                
+                <div id="item-2" class="carousel-item" data-id="100000004368232">
+                    <div class="carousel-item-thumb">
+                        <a href="/video/movies/100000004368232/anatomy-the-man-who-knew-infinity.html?playlistId=1194811622182" class="carousel-background loading" title="Anatomy | ‘The Man Who Knew Infinity’">
+                            <div id="carousel_video_2" class="carousel-video"><span class="carousel-video-ratio"></span></div>
+                            <img class="carousel-img" style="display: none" data-src="http://graphics8.nytimes.com//images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoFifteenBySeven1305.jpg" />
+                            <span class="carousel-image-ratio"></span>
+                            <span class="carousel-item-content ">
+                                <h2>Anatomy | ‘The Man Who Knew Infinity’</h2>
+                                <span class="carousel-kicker">
+                                    
+                                        <h3 class="kicker-channel">Culture</h3>
+                                        <span class="kicker-show">Anatomy of a Scene</span>
+                                    
+                                    
+                                        <h3 class="kicker-duration">2:41</h3>
+                                    
+                                </span>
+                                <span class="carousel-item-play  "  >
+                                    <i class="icon"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                </div>
+                
+                <div id="item-3" class="carousel-item" data-id="100000004370384">
+                    <div class="carousel-item-thumb">
+                        <a href="/video/us/politics/100000004370384/what-are-bathroom-rights.html?playlistId=1194811622182" class="carousel-background loading" title="What Are ‘Bathroom Rights’?">
+                            <div id="carousel_video_3" class="carousel-video"><span class="carousel-video-ratio"></span></div>
+                            <img class="carousel-img" style="display: none" data-src="http://graphics8.nytimes.com//images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoFifteenBySeven1305.jpg" />
+                            <span class="carousel-image-ratio"></span>
+                            <span class="carousel-item-content ">
+                                <h2>What Are ‘Bathroom Rights’?</h2>
+                                <span class="carousel-kicker">
+                                    
+                                        <h3 class="kicker-channel">U.S. &amp; Politics</h3>
+                                    
+                                    
+                                        <h3 class="kicker-duration">1:16</h3>
+                                    
+                                </span>
+                                <span class="carousel-item-play  "  >
+                                    <i class="icon"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                </div>
+                
+                <div id="item-4" class="carousel-item" data-id="100000004315692">
+                    <div class="carousel-item-thumb">
+                        <a href="/video/dining/100000004315692/taste-makers-nigerian-food-crash-and-burn-style.html?playlistId=1194811622182" class="carousel-background loading" title="Nigerian Food, Crash-and-Burn Style | Taste Makers">
+                            <div id="carousel_video_4" class="carousel-video"><span class="carousel-video-ratio"></span></div>
+                            <img class="carousel-img" style="display: none" data-src="http://graphics8.nytimes.com//images/2016/04/07/multimedia/ychefs-tundewey/ychefs-tundewey-videoFifteenBySeven1305-v3.png" />
+                            <span class="carousel-image-ratio"></span>
+                            <span class="carousel-item-content ">
+                                <h2>Nigerian Food, Crash-and-Burn Style | Taste Makers</h2>
+                                <span class="carousel-kicker">
+                                    
+                                        <h3 class="kicker-channel">Taste Makers</h3>
+                                    
+                                    
+                                        <h3 class="kicker-duration">6:01</h3>
+                                    
+                                </span>
+                                <span class="carousel-item-play  "  >
+                                    <i class="icon"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                </div>
+                
+                <div id="item-5" class="carousel-item" data-id="100000004366797">
+                    <div class="carousel-item-thumb">
+                        <a href="/video/world/americas/100000004366797/raised-with-rebels.html?playlistId=1194811622182" class="carousel-background loading" title="Raised With Rebels">
+                            <div id="carousel_video_5" class="carousel-video"><span class="carousel-video-ratio"></span></div>
+                            <img class="carousel-img" style="display: none" data-src="http://graphics8.nytimes.com//images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoFifteenBySeven1305.jpg" />
+                            <span class="carousel-image-ratio"></span>
+                            <span class="carousel-item-content ">
+                                <h2>Raised With Rebels</h2>
+                                <span class="carousel-kicker">
+                                    
+                                        <h3 class="kicker-channel">International</h3>
+                                    
+                                    
+                                        <h3 class="kicker-duration">3:05</h3>
+                                    
+                                </span>
+                                <span class="carousel-item-play  "  >
+                                    <i class="icon"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div class="app-container">
+            <div class="main-container">
+                <div class="main wrapper clearfix" role="main">
+                    <div class="main-row">
+    <div id="main-column" class="main-column">
+        <div class="inner-wrapper">
+            
+
+
+            <div class="recent-episodes">
+                <div class="recent-episodes-title">
+                    <h1 class='override-show-theme'>Times Video</h1>
+                </div>
+
+                
+                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+        
+        
+            
+        
+    
+
+    <div id="recent-episodes-inner" class="playlist" itemscope itemtype=http://schema.org/ImageGallery >
+        
+            
+            
+
+            
+
+            
+                <meta itemprop="name" content="Times Video">
+                <meta itemprop="mainContentOfPage" content="true"/>
+            
+
+            
+            <ul class="playlist-thumbs" data-per-page-limit="12" data-module-type="recent" data-page-type="home">
+            
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+			
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004377961"
+		class="thumb-item show show-enabled default  channel-name-default  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<span class="show-name-link">&nbsp;</span>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/us/politics/100000004377961/the-best-of-obamas-correspondents-dinner-speech.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Best of Obama&#39;s Correspondents&#39; Dinner Speech"
+						title="Best of Obama&#39;s Correspondents&#39; Dinner Speech"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/latest-video/">Latest Video</a>
+			
+
+			
+				<span class="duration">8:22</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/us/politics/100000004377961/the-best-of-obamas-correspondents-dinner-speech.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Best of Obama&#39;s Correspondents&#39; Dinner Speech</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004374785"
+		class="thumb-item show show-enabled default channel-name-style channel-id-1194811622321  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/on-the-street/">Bill Cunningham</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/fashion/100000004374785/bill-cunningham-all-aswirl.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Bill Cunningham | All Aswirl"
+						title="Bill Cunningham | All Aswirl"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/style/">Style</a>
+			
+
+			
+				<span class="duration">1:35</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/fashion/100000004374785/bill-cunningham-all-aswirl.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Bill Cunningham | All Aswirl</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004373937"
+		class="thumb-item show show-enabled default channel-name-culture channel-id-1194811622313  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/thisweeksmovies/">This Week’s Movies</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/movies/100000004373937/this-weeks-movies-april-29-2016.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="This Week’s Movies | April 29, 2016"
+						title="This Week’s Movies | April 29, 2016"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/arts/">Culture</a>
+			
+
+			
+				<span class="duration">3:28</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/movies/100000004373937/this-weeks-movies-april-29-2016.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>This Week’s Movies | April 29, 2016</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004369320"
+		class="thumb-item show show-enabled default channel-name-food channel-id-1194820411913  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/melissa-clark/">Melissa Clark</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/dining/100000004369320/green-garlic-tabbouleh.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Green Garlic Tabbouleh"
+						title="Green Garlic Tabbouleh"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/dining-and-wine/">Food</a>
+			
+
+			
+				<span class="duration">1:51</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/dining/100000004369320/green-garlic-tabbouleh.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Green Garlic Tabbouleh</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+			
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004370384"
+		class="thumb-item show show-enabled default  channel-name-default  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<span class="show-name-link">&nbsp;</span>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/us/politics/100000004370384/what-are-bathroom-rights.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="What Are ‘Bathroom Rights’?"
+						title="What Are ‘Bathroom Rights’?"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/us-politics/">U.S. &amp; Politics</a>
+			
+
+			
+				<span class="duration">1:16</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/us/politics/100000004370384/what-are-bathroom-rights.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>What Are ‘Bathroom Rights’?</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004370432"
+		class="thumb-item show show-enabled default channel-name-business channel-id-1194811622255  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/driven/">Driven</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/automobiles/autoreviews/100000004370432/driven-2017-hyundai-elantra.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Driven | 2017 Hyundai Elantra"
+						title="Driven | 2017 Hyundai Elantra"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/business/">Business</a>
+			
+
+			
+				<span class="duration">4:34</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/automobiles/autoreviews/100000004370432/driven-2017-hyundai-elantra.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Driven | 2017 Hyundai Elantra</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004368232"
+		class="thumb-item show show-enabled default channel-name-culture channel-id-1194811622313  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/anatomy-of-a-scene/">Anatomy of a Scene</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/movies/100000004368232/anatomy-the-man-who-knew-infinity.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Anatomy | ‘The Man Who Knew Infinity’"
+						title="Anatomy | ‘The Man Who Knew Infinity’"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/arts/">Culture</a>
+			
+
+			
+				<span class="duration">2:41</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/movies/100000004368232/anatomy-the-man-who-knew-infinity.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Anatomy | ‘The Man Who Knew Infinity’</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+			
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004362198"
+		class="thumb-item show show-enabled default  channel-name-default  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<span class="show-name-link">&nbsp;</span>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/us/100000004362198/hunting-for-venomous-pests.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="The Scorpions Are Out Early This Year"
+						title="The Scorpions Are Out Early This Year"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/science/">Science</a>
+			
+
+			
+				<span class="duration">0:49</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/us/100000004362198/hunting-for-venomous-pests.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>The Scorpions Are Out Early This Year</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004367133"
+		class="thumb-item show show-enabled default channel-name-science channel-id-1194811622277  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/sciencetake/">ScienceTake</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/science/100000004367133/sciencetake-shake-a-tail-feather.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="ScienceTake | Shake a Tail Feather"
+						title="ScienceTake | Shake a Tail Feather"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/science/">Science</a>
+			
+
+			
+				<span class="duration">1:30</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/science/100000004367133/sciencetake-shake-a-tail-feather.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>ScienceTake | Shake a Tail Feather</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+			
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004366797"
+		class="thumb-item show show-enabled default  channel-name-default  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<span class="show-name-link">&nbsp;</span>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/world/americas/100000004366797/raised-with-rebels.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Raised With Rebels"
+						title="Raised With Rebels"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/world/">International</a>
+			
+
+			
+				<span class="duration">3:05</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/world/americas/100000004366797/raised-with-rebels.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Raised With Rebels</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+			
+			
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004362674"
+		class="thumb-item show show-enabled default  channel-name-default  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<span class="show-name-link">&nbsp;</span>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/us/elections/100000004362674/candidates-speak-after-primaries.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Candidates Speak After Primaries"
+						title="Candidates Speak After Primaries"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href="/video/election-2016/">Election 2016</a>
+			
+
+			
+				<span class="duration">3:22</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/us/elections/100000004362674/candidates-speak-after-primaries.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Candidates Speak After Primaries</h3>
+		</a>
+	</li>
+
+
+                
+            
+                
+                
+                    
+
+	
+	
+	
+
+	
+		
+		
+	
+
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+	
+
+	<li data-id="100000004359985"
+		class="thumb-item show show-enabled default channel-name-default channel-id-  channel-themed" itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject >
+
+		
+		<span class="show-logo">
+			<a class="show-name-link" href="/video/opdocs-season-5/">Op-Docs: Season 5</a>
+		</span>
+		
+		<a data-collection="Times Video" class="thumb-holder" href="/video/opinion/100000004359985/manufacturing-chinas-future.html?playlistId=1194811622182" itemprop=url>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img b-lazy"
+						alt="Manufacturing China’s Future"
+						title="Manufacturing China’s Future"
+						
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine310.jpg"
+						
+						itemprop=contentUrl />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon default"></i></p>
+			</div>
+		</a>
+		
+		<h5 class="thumb-section-name">
+			
+				<a class="section-name-link" href=""></a>
+			
+
+			
+				<span class="duration">13:33</span>
+			
+		</h5>
+		
+		<a data-collection="Times Video" class="thumb-headline-holder" href="/video/opinion/100000004359985/manufacturing-chinas-future.html?playlistId=1194811622182">
+			<h3 class="thumb-headline" itemprop=name>Manufacturing China’s Future</h3>
+		</a>
+	</li>
+
+
+                
+            
+            </ul>
+            
+            <div class="controls">
+                <button type="button" class="load-more">Show more videos from <span class="section-name strong">Times Video</span></button>
+            </div>
+            
+        
+    </div>
+
+
+
+
+            </div>
+            
+                <div id="morein-mount"></div>
+            
+        </div>
+    </div>
+    <div id="sidebar" class="sidebar list-view">
+    <div class="inner-wrapper">
+        
+<div class="most-popular">
+	<h3>Most Popular</h3>
+	<ul class="most-popular-list">
+
+	    
+	    <li>
+	        <a data-collection="U.S." class="popular-title" href="http://www.nytimes.com/video/us/politics/100000004377961/the-best-of-obamas-correspondents-dinner-speech.html">
+	            <h4><span>1</span> U.S.</h4>
+	            <p><span class="popular-title">Best of Obama&#39;s Correspondents&#39; Dinner Speech</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="U.S." class="popular-title" href="http://www.nytimes.com/video/us/100000004362198/hunting-for-venomous-pests.html">
+	            <h4><span>2</span> U.S.</h4>
+	            <p><span class="popular-title">The Scorpions Are Out Early This Year</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="Fashion &amp; Style" class="popular-title" href="http://www.nytimes.com/video/fashion/100000004374785/bill-cunningham-all-aswirl.html">
+	            <h4><span>3</span> Fashion &amp; Style</h4>
+	            <p><span class="popular-title">Bill Cunningham | All Aswirl</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="Science" class="popular-title" href="http://www.nytimes.com/video/science/100000004330501/meet-the-parrots.html">
+	            <h4><span>4</span> Science</h4>
+	            <p><span class="popular-title">Parrots: The Highlight Reel</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="U.S." class="popular-title" href="http://www.nytimes.com/video/us/politics/100000004370384/what-are-bathroom-rights.html">
+	            <h4><span>5</span> U.S.</h4>
+	            <p><span class="popular-title">What Are ‘Bathroom Rights’?</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="Food" class="popular-title" href="http://www.nytimes.com/video/dining/100000002155362/cutting-up-a-whole-chicken.html">
+	            <h4><span>6</span> Food</h4>
+	            <p><span class="popular-title">How to Cut Up a Whole Chicken</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="Movies" class="popular-title" href="http://www.nytimes.com/video/movies/100000004373937/this-weeks-movies-april-29-2016.html">
+	            <h4><span>7</span> Movies</h4>
+	            <p><span class="popular-title">This Week’s Movies | April 29, 2016</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="World" class="popular-title" href="http://www.nytimes.com/video/world/asia/100000004108808/the-killing-of-farkhunda.html">
+	            <h4><span>8</span> World</h4>
+	            <p><span class="popular-title">The Killing of Farkhunda</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="Theater" class="popular-title" href="http://www.nytimes.com/video/theater/100000004351406/there-is-no-escaping-shakespeare.html">
+	            <h4><span>9</span> Theater</h4>
+	            <p><span class="popular-title">There Is No Escaping Shakespeare</span></p>
+	        </a>
+	    </li>
+	    
+	    <li>
+	        <a data-collection="U.S." class="popular-title" href="http://www.nytimes.com/video/us/politics/100000004378024/how-will-obama-spend-his-retirement.html">
+	            <h4><span>10</span> U.S.</h4>
+	            <p><span class="popular-title">How Will Obama Spend His Retirement?</span></p>
+	        </a>
+	    </li>
+	    
+	</ul>
+</div>
+
+
+    </div>
+</div>
+
+                    </div>
+                </div> <!-- .main -->
+            </div> <!-- .main-container -->
+            <div class="footer-container"><footer class="footer wrapper" role="contentinfo">
+    <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <li class="footer-primary" >
+                <a href="http://www.nytco.com/" itemprop="url"><span itemprop="name">&copy; 2016 New York Times Company</span></a>
+                <a href="http://www.nytimes.com/content/help/contact/directory.html" itemprop="url"><span itemprop="name">Contact Us</span></a>
+                <a href="http://jobs.nytco.com/" itemprop="url"><span itemprop="name">Work with Us</span></a>
+                <a href="http://nytmediakit.com/" itemprop="url"><span itemprop="name">Advertising</span></a>
+                <a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp" itemprop="url"><span itemprop="name">Ad Choice</span></a>
+                <a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html" itemprop="url"><span itemprop="name">Privacy</span></a>
+                <a href="http://www.nytimes.com/content/help/rights/terms/terms-of-service.html" itemprop="url"><span itemprop="name">Terms of Service</span></a>
+                <a href="http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html" itemprop="url"><span itemprop="name">Terms of Sale</span></a>
+            </li>
+            <li class="footer-secondary">
+                <a href="http://www.nytimes.com/services/xml/rss/index.html" itemprop="url"><span itemprop="name">RSS</span></a>
+                <a href="http://www.nytimes.com/content/help/front.html" itemprop="url"><span itemprop="name">Help</span></a>
+                <a href="https://myaccount.nytimes.com/membercenter/feedback.html" itemprop="url"><span itemprop="name">Site Feedback</span></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+            </div>
+        <script type="text/template" id="playlist-item-tmpl">
+	
+		
+		{% for video in videos %}
+	        {% set visible_state = 'hide' %}
+	        {% set img_src_attr = 'src' %}
+	        {% if sponsorPlaylist %}
+			{% set video_url = video.seo_url|playlistOverride(video.playlist.id) %}
+			{% else %}
+			{% set video_url = video.seo_url|playlistOverride(playlist.id) %}
+			{% endif %}
+	  
+  
+	
+
+	{% if video.playlist.type|getPlaylistType() === "show" %}
+		{% set inChannel = false %}
+		{% set inShow = true %}
+	{% else %}
+		{% if video.playlist.type|getPlaylistType() === "channel" %}
+			{% set inChannel = true %}
+			{% set inShow = false %}
+		{% else %}
+			{% set inChannel = false %}
+			{% set inShow = false %}
+		{% endif %}
+	{% endif %}
+
+	{% set itemPropURL = '' %}
+	{% set itemPropContentURL = '' %}
+	{% set itemPropName = '' %}
+	{% set itemPropListElement = '' %}
+	{% set itemScope = '' %}
+	{% if pageType !== "watch" %}
+		{% set itemPropURL = 'itemprop=url' %}
+		{% set itemPropContentURL = 'itemprop=contentUrl' %}
+		{% set itemPropName = 'itemprop=name' %}
+		{% set itemPropListElement = 'itemprop=associatedMedia' %}
+		{% set itemScope = 'itemscope itemtype=http://schema.org/ImageObject' %}
+	{% endif %}
+
+	<li data-id="{{ video.id }}"
+		class="thumb-item {{ visible_state }} {% if !hideShowKicker %}show-enabled{% endif %} {{video.assetMeta.name}} {% if inShow %}channel-name-{{ video.playlist.parent_channel.headline | slugify | default('default') }} channel-id-{{ video.playlist.parent_channel.id }} {% else %} channel-name-default {% endif %} channel-themed" {{ itemPropListElement }} {{ itemScope }} >
+
+		{% if !hideShowKicker %}
+		<span class="show-logo">
+			{% if inShow %}<a class="show-name-link" href="{{ video.playlist.publish_url|getPlaylistLabel() }}">{{ video.playlist.headline }}</a>{% else %}<span class="show-name-link">&nbsp;</span>{% endif %}
+		</span>
+		{% endif %}
+		<a data-collection="{{playlist.headline}}" class="thumb-holder" href="{{ video_url }}" {{ itemPropURL }}>
+			<span class="thumb-wrapper">
+				<span class="thumb-border"></span>
+				<span class="thumb-crop">
+					<img class="thumb-img" alt="{{ video.headline }}" title="{{ video.headline }}" {{ img_src_attr }}="{{ video.images | getThumbImage(moduleType, pageType, default_images) }}" {{ itemPropContentURL }} />
+				</span>
+			</span>
+			<div class="play-holder">
+				<p class="button-play"><i class="times-sprite icon {{video.assetMeta.name}}"></i></p>
+			</div>
+		</a>
+		{# To do using video metadata add link to the channel/section #}
+		{% if !hideChannelKicker %}
+		<h5 class="thumb-section-name">
+			{% if inShow %}
+				<a class="section-name-link" href="{{ video.playlist.parent_channel.publish_url|getPlaylistLabel() }}">{{ video.playlist.parent_channel.headline }}</a>
+			{% else %}
+				<a class="section-name-link" href="{{ video.playlist.publish_url|getPlaylistLabel() }}">{{ video.playlist.headline }}</a>
+			{% endif %}
+
+			{% if (video.duration > 0) %}
+				<span class="duration">{{ video.duration | formatDuration }}</span>
+			{% endif %}
+		</h5>
+		{% endif %}
+		<a data-collection="{{playlist.headline}}" class="thumb-headline-holder" href="{{ video_url }}">
+			<h3 class="thumb-headline" {{ itemPropName }}>{{ video.headline }}</h3>
+		</a>
+	</li>
+	
+
+	
+		
+			{% endfor %}
+		
+	
+
+
+        </script>
+        </div> <!-- .app-container -->
+    
+            <script src="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/lib/jsonpCallbacks.js"></script>
+            <!--[if lt IE 9]>
+                <script type="text/javascript" src="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/lib/json3.js"></script>
+                <script type="text/javascript" src="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/lib/respond.min.js"></script>
+            <![endif]-->
+            <script type="text/javascript">
+                window.BackboneLocal = window.Backbone;
+                var NYTD = NYTD || {};
+                NYTD.env = "production";function getAppSettings(){
+    var playlistType = "";
+    var playlistHeadline = "Times Video";
+    var playlistDisplayName = "";
+    var channelName = (playlistType === 'show' && playlistHeadline !== "") ? playlistDisplayName : playlistHeadline;
+
+    var AppSettings = {
+        domain: {
+            base: "http://www.nytimes.com",
+            js: "//js.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            jsSecure: "https://sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            jsLegacy: "http://js.nyt.com",
+            css: "//css.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            cssLegacy: "http://css.nyt.com",
+            images: "http://graphics8.nytimes.com/",
+            imagesSecure: "https://sv.nyt.com/",
+            imagesStatic: "//graphics8.nytimes.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            html: "//sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            htmlSecure: "https://sv.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo",
+            api: "http://www.nytimes.com",
+            videoFactoryUrl: "",
+            adxUrl: "https://www.nytimes.com/svc/adxmulti",
+            adxRun: "https://www.nytimes.com/adx/bin",
+            profileImage: "",
+            searchNytimes: "http://query.nytimes.com/search/",
+            searchVideo: "http://query.nytimes.com/search/video/",
+            nyt5Host: "http://nytimes.com",
+            nyt5MyAccount: "https://myaccount.nytimes.com",
+            nyt5ProfileImage: "http://pimage.timespeople.nytimes.com",
+            nyt5GatewayHost: "http://www.nytimes.com",
+            gatewayPageName: "gateway_times_talk.nytimes.com",
+            branded: "http://brandedplaylist.nytimes.com",
+            readingListApi: "http://www.nytimes.com/svc/profile/reading-list/v1"
+        },
+        data: {
+            env: "production",
+            dataEnv: "production",
+            default_images: {
+                "carousel": "//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-15by7-1305x609.png",
+                "thumb_small": "//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-16by9-225x126.png",
+                "thumb_medium": "//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-16by9-310x174.png"
+            },
+            pageType: "home",
+            branded: false,
+            brandedBy: "none",
+            "adx": {
+                "show": "nytimes.com/video/showpage"
+            },
+            simpleReachPid: "526e7abc97b0c9f447000001",
+            channelName: channelName,
+            videoId: "",
+            playlistId: "1194811622182",
+            mobilePageSize: 5,
+            mobileScrollPercent: 40,
+            playlistLength: 100,
+            playlistSeoUrl: "/video/latest-video",
+            dfpBaseAdUnitPath: "/29390238/nyt/video"
+        }
+    };
+    return AppSettings;
+}
+
+                function getNavData(){
+                    var navData =[{"knews_id":1194811622182,"display_name":"Latest Video","publish_url":"/video/latest-video","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[]},{"knews_id":100000002797598,"display_name":"U.S. & Politics","publish_url":"/video/us-politics","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000002148738,"display_name":"Retro Report","publish_url":"/video/retro-report","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000002797598,"parent_url":"/video/us-politics","parent_name":"U.S. & Politics"},{"knews_id":1194811622353,"display_name":"The Last Word","publish_url":"/video/last-word","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000002797598,"parent_url":"/video/us-politics","parent_name":"U.S. & Politics"}]},{"knews_id":1194811622205,"display_name":"International","publish_url":"/video/world","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[]},{"knews_id":1194811622241,"display_name":"New York","publish_url":"/video/n-y-region","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[]},{"knews_id":100000001150263,"display_name":"Op-Docs","publish_url":"/video/op-docs","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003465947,"display_name":"Op-Docs: Season 4","publish_url":"/video/opdocs-season-4","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465284,"display_name":"Op-Docs: Season 3","publish_url":"/video/opdocs-season-3","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465282,"display_name":"Op-Docs: Season 2","publish_url":"/video/opdocs-season-2","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465281,"display_name":"Op-Docs: Season 1","publish_url":"/video/opdocs-season-1","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465295,"display_name":"Op-Docs: Animated Life","publish_url":"/video/opdocs-animated-life","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465291,"display_name":"Op-Docs: Drew Christie","publish_url":"/video/opdocs-drew-christie","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465285,"display_name":"Op-Docs: Errol Morris","publish_url":"/video/opdocs-errol-morris","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465286,"display_name":"Op-Docs: Casey Neistat","publish_url":"/video/opdocs-casey-neistat","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003465294,"display_name":"Op-Docs: Sundance","publish_url":"/video/opdocs-sundance","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"},{"knews_id":100000003509067,"display_name":"Op-Docs: Oscar-Nominated Filmmakers","publish_url":"/video/op-docs-oscars","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000001150263,"parent_url":"/video/op-docs","parent_name":"Op-Docs"}]},{"knews_id":1194811622299,"display_name":"Opinion","publish_url":"/video/opinion","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":1194811622305,"display_name":"Nicholas Kristof","publish_url":"/video/nicholas-d-kristof","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622299,"parent_url":"/video/opinion","parent_name":"Opinion"}]},{"knews_id":100000002500298,"display_name":"Times Documentaries","publish_url":"/video/times-documentaries","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003533279,"display_name":"Made With Kickstarter","publish_url":"/video/made-with-kickstarter","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":100000002500298,"parent_url":"/video/times-documentaries","parent_name":"Times Documentaries"}]},{"knews_id":1194811622255,"display_name":"Business","publish_url":"/video/business","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003592681,"display_name":"Women in Business","publish_url":"/video/women-in-business","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622255,"parent_url":"/video/business","parent_name":"Business"},{"knews_id":100000002419522,"display_name":"Driven","publish_url":"/video/driven","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622255,"parent_url":"/video/business","parent_name":"Business"}]},{"knews_id":1194811622271,"display_name":"Technology","publish_url":"/video/technology","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003641597,"display_name":"Bits | Robotica","publish_url":"/video/robotica","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622271,"parent_url":"/video/technology","parent_name":"Technology"},{"knews_id":100000002478776,"display_name":"App Smart","publish_url":"/video/app-smart","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622271,"parent_url":"/video/technology","parent_name":"Technology"}]},{"knews_id":1194811622313,"display_name":"Culture","publish_url":"/video/arts","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000002794174,"display_name":"TimesTalks","publish_url":"/video/times-talks","sponsored":false,"sponsored_by":"","type":"TimestalksParent","is_visible":true,"parent_id":1194811622313,"parent_url":"/video/arts","parent_name":"Culture"},{"knews_id":100000002032444,"display_name":"This Week’s Movies","publish_url":"/video/thisweeksmovies","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622313,"parent_url":"/video/arts","parent_name":"Culture"},{"knews_id":100000001987201,"display_name":"In Performance","publish_url":"/video/in-performance","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622313,"parent_url":"/video/arts","parent_name":"Culture"},{"knews_id":1194811668553,"display_name":"The Carpetbagger","publish_url":"/video/carpetbagger","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622313,"parent_url":"/video/arts","parent_name":"Culture"},{"knews_id":100000002420711,"display_name":"Anatomy of a Scene","publish_url":"/video/anatomy-of-a-scene","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622313,"parent_url":"/video/arts","parent_name":"Culture"}]},{"knews_id":1194811622321,"display_name":"Style","publish_url":"/video/style","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":1247463985977,"display_name":"Bill Cunningham","publish_url":"/video/on-the-street","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622321,"parent_url":"/video/style","parent_name":"Style"},{"knews_id":100000001775830,"display_name":"Intersection: Street Style","publish_url":"/video/fashion-intersection","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622321,"parent_url":"/video/style","parent_name":"Style"},{"knews_id":1194811622327,"display_name":"Vows","publish_url":"/video/vows","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622321,"parent_url":"/video/style","parent_name":"Style"},{"knews_id":100000002441966,"display_name":"Modern Love","publish_url":"/video/modern-love","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622321,"parent_url":"/video/style","parent_name":"Style"}]},{"knews_id":1194812905212,"display_name":"T Magazine","publish_url":"/video/t-magazine","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003645519,"display_name":"T House Tours","publish_url":"/video/house-tours","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480859,"display_name":"T On Set","publish_url":"/video/on-set","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480861,"display_name":"T How To","publish_url":"/video/how-to","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480645,"display_name":"T Art & Design","publish_url":"/video/t-mag-art","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480802,"display_name":"T Entertainment","publish_url":"/video/t-mag-entertainment","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480810,"display_name":"T Fashion","publish_url":"/video/t-mag-fashion","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480811,"display_name":"T Food","publish_url":"/video/t-mag-food","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000003480830,"display_name":"T Travel","publish_url":"/video/t-mag-travel","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000004089213,"display_name":"The Illustrated Interview","publish_url":"/video/illustrated-interview","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"},{"knews_id":100000004202330,"display_name":"In The Air","publish_url":"/video/t-in-the-air","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194812905212,"parent_url":"/video/t-magazine","parent_name":"T Magazine"}]},{"knews_id":1194811622283,"display_name":"Health","publish_url":"/video/health","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000002581487,"display_name":"Ask Well","publish_url":"/video/ask-well","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622283,"parent_url":"/video/health","parent_name":"Health"},{"knews_id":100000002597604,"display_name":"The Workout","publish_url":"/video/the-workout","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622283,"parent_url":"/video/health","parent_name":"Health"}]},{"knews_id":1194820411913,"display_name":"Food","publish_url":"/video/dining-and-wine","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000001606605,"display_name":"Melissa Clark","publish_url":"/video/melissa-clark","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194820411913,"parent_url":"/video/dining-and-wine","parent_name":"Food"},{"knews_id":100000002724593,"display_name":"What’s In It?","publish_url":"/video/whats-in-it","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194820411913,"parent_url":"/video/dining-and-wine","parent_name":"Food"},{"knews_id":100000002679872,"display_name":"Recipe Lab","publish_url":"/video/recipe-lab","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194820411913,"parent_url":"/video/dining-and-wine","parent_name":"Food"}]},{"knews_id":1194811622333,"display_name":"Travel","publish_url":"/video/travel","sponsored":false,"sponsored_by":"100000003680336","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003029080,"display_name":"36 Hours","publish_url":"/video/36-hours","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622333,"parent_url":"/video/travel","parent_name":"Travel"}]},{"knews_id":1194811622289,"display_name":"Sports","publish_url":"/video/sports","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[]},{"knews_id":1194811622347,"display_name":"Real Estate","publish_url":"/video/real-estate","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000003448989,"display_name":"Block by Block","publish_url":"/video/new-york-city-neighborhoods-block-by-block","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622347,"parent_url":"/video/real-estate","parent_name":"Real Estate"}]},{"knews_id":1194811622277,"display_name":"Science","publish_url":"/video/science","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[{"knews_id":100000002331748,"display_name":"ScienceTake","publish_url":"/video/sciencetake","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622277,"parent_url":"/video/science","parent_name":"Science"},{"knews_id":100000002906445,"display_name":"Out There","publish_url":"/video/out-there","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622277,"parent_url":"/video/science","parent_name":"Science"},{"knews_id":100000002963017,"display_name":"How It Happens","publish_url":"/video/how-it-happens","sponsored":false,"sponsored_by":"","type":"Show","is_visible":true,"parent_id":1194811622277,"parent_url":"/video/science","parent_name":"Science"}]},{"knews_id":1194811622351,"display_name":"Magazine","publish_url":"/video/magazine","sponsored":false,"sponsored_by":"","type":"Channel","is_visible":true,"plst_secondary":[]}];
+                    return navData;
+                }
+            </script>
+    <script type="text/javascript">
+    var NYTV = NYTV || {};
+    NYTV.externalPageDeps = NYTV.externalPageDeps || [];
+    NYTV.externalPageDeps.push("//static01.nyt.com/video/vhs/vhs-2.x.js")
+
+    var playlistId = 1194811622182;
+    var playlistMeta = {"length":12,"total":17,"next":{"skip":12,"count":12},"prev":null,"nextQuery":"skip=12&count=12","prevQuery":""};
+    var playlistBlockVideos = [{"id":100000004377961,"headline":"Best of Obama's Correspondents' Dinner Speech","summary":"President Obama took aim at presidential candidates from both parties, the news media and himself before ending with a mike drop at the 2016 White House Correspondents’ Dinner.","byline":"By C-SPAN","duration":501601,"authors":[{"data_id":30750,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":30750,"name":"C-SPAN","title_case_name":"C-Span","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Quynhanh Do","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-05-01T12:55:14.014.EDT","seo_url":"/video/us/politics/100000004377961/the-best-of-obamas-correspondents-dinner-speech.html","domain":"http://www.nytimes.com","publish_url":"/video/us/politics/100000004377961/the-best-of-obamas-correspondents-dinner-speech.html","images":[{"credit":null,"height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-thumbStandard.jpg","type":"thumbStandard"},{"credit":null,"height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-thumbWide.jpg","type":"thumbWide"},{"credit":null,"height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSmall.jpg","type":"videoSmall"},{"credit":null,"height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoLarge.jpg","type":"videoLarge"},{"credit":null,"height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":null,"height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":null,"height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":null,"height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":null,"height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":null,"height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":null,"height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":null,"height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/multimedia/whcd-obamaroast/whcd-obamaroast-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":1194811622182,"headline":"Latest Video","type":"Channel","url":"/video/latest-video","publish_url":"/video/latest-video","display_name":"Latest Video","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":0},{"id":100000004374785,"headline":"Bill Cunningham | All Aswirl","summary":"Pleated skirts are back now, in multiple colors, fabrics and lengths.","byline":"By JOANNA NIKAS","duration":94661,"authors":[{"data_id":2966,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":2966,"name":"JOANNA NIKAS","title_case_name":"Joanna Nikas","image":null,"bio":null,"twitter":"joannanikasnyc","twitter_name":"joannanikasnyc"},{"id":null,"name":"Alexandra Eaton","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-29T16:21:56.056.EDT","seo_url":"/video/fashion/100000004374785/bill-cunningham-all-aswirl.html","domain":"http://www.nytimes.com","publish_url":"/video/fashion/100000004374785/bill-cunningham-all-aswirl.html","images":[{"credit":"","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-thumbStandard.jpg","type":"thumbStandard"},{"credit":"","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-thumbWide.jpg","type":"thumbWide"},{"credit":"","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSmall.jpg","type":"videoSmall"},{"credit":"","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoLarge.jpg","type":"videoLarge"},{"credit":"","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/05/01/fashion/01STREETCOMBO/01STREETCOMBO-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":1247463985977,"headline":"Bill Cunningham","type":"Show","url":"/video/on-the-street","publish_url":"/video/on-the-street","display_name":"Bill Cunningham","parent_display_name":"Style","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194811622321,"url":"/video/style","headline":"Style","display_name":"Style"},"parent_channel":{"id":1194811622321,"publish_url":"/video/style","headline":"Style","display_name":"Style"}},"sponsorFor":[],"index":1},{"id":100000004373937,"headline":"This Week’s Movies | April 29, 2016","summary":"The New York Times film critics review “Keanu,” “The Family Fang” and “L’Atessa.”","byline":"By SAMANTHA STARK and ROBIN LINDSAY","duration":208375,"authors":[{"data_id":4104,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":4104,"name":"SAMANTHA STARK","title_case_name":"Samantha Stark","image":null,"bio":null,"twitter":null,"twitter_name":null},{"data_id":27197,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":27197,"name":"ROBIN LINDSAY","title_case_name":"Robin Lindsay","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Mike Puretz","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-29T14:47:39.039.EDT","seo_url":"/video/movies/100000004373937/this-weeks-movies-april-29-2016.html","domain":"http://www.nytimes.com","publish_url":"/video/movies/100000004373937/this-weeks-movies-april-29-2016.html","images":[{"credit":"Warner Bros. Entertainment, via Associated Press","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-thumbWide.jpg","type":"thumbWide"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSmall.jpg","type":"videoSmall"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoLarge.jpg","type":"videoLarge"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Warner Bros. Entertainment, via Associated Press","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/29/multimedia/movies-04292016/movies-04292016-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000002032444,"headline":"This Week’s Movies","type":"Show","url":"/video/thisweeksmovies","publish_url":"/video/thisweeksmovies","display_name":"This Week’s Movies","parent_display_name":"Culture","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194811622313,"url":"/video/arts","headline":"Culture","display_name":"Culture"},"parent_channel":{"id":1194811622313,"publish_url":"/video/arts","headline":"Culture","display_name":"Culture"}},"sponsorFor":[],"index":2},{"id":100000004369320,"headline":"Green Garlic Tabbouleh","summary":"Seasonal green garlic adds springtime flavor to this fresh tabbouleh salad.","byline":"By ALEC COHEN","duration":111178,"authors":[{"data_id":29756,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":29756,"name":"ALEC COHEN","title_case_name":"Alec Cohen","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Alexandra Eaton","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-29T12:24:47.047.EDT","seo_url":"/video/dining/100000004369320/green-garlic-tabbouleh.html","domain":"http://www.nytimes.com","publish_url":"/video/dining/100000004369320/green-garlic-tabbouleh.html","images":[{"credit":"Andrew Scrivani for The New York Times","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Andrew Scrivani for The New York Times","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-thumbWide.jpg","type":"thumbWide"},{"credit":"Andrew Scrivani for The New York Times","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSmall.jpg","type":"videoSmall"},{"credit":"Andrew Scrivani for The New York Times","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoLarge.jpg","type":"videoLarge"},{"credit":"Andrew Scrivani for The New York Times","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Andrew Scrivani for The New York Times","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Andrew Scrivani for The New York Times","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Andrew Scrivani for The New York Times","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Andrew Scrivani for The New York Times","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Andrew Scrivani for The New York Times","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Andrew Scrivani for The New York Times","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Andrew Scrivani for The New York Times","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/clark-green-tabouli/clark-green-tabouli-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000001606605,"headline":"Melissa Clark","type":"Show","url":"/video/melissa-clark","publish_url":"/video/melissa-clark","display_name":"Melissa Clark","parent_display_name":"Food","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194820411913,"url":"/video/dining-and-wine","headline":"Food","display_name":"Food"},"parent_channel":{"id":1194820411913,"publish_url":"/video/dining-and-wine","headline":"Food","display_name":"Food"}},"sponsorFor":[],"index":3},{"id":100000004370384,"headline":"What Are ‘Bathroom Rights’?","summary":"Many states have legislation pending that would make it illegal for transgender people to choose which public bathroom they use based on their gender identity.","byline":"By ERICA BERENSTEIN","duration":76376,"authors":[{"data_id":5483,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":5483,"name":"ERICA BERENSTEIN","title_case_name":"Erica Berenstein","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Adam B. Ellick","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-29T10:15:48.048.EDT","seo_url":"/video/us/politics/100000004370384/what-are-bathroom-rights.html","domain":"http://www.nytimes.com","publish_url":"/video/us/politics/100000004370384/what-are-bathroom-rights.html","images":[{"credit":"Lucy Nicholson/Reuters","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Lucy Nicholson/Reuters","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-thumbWide.jpg","type":"thumbWide"},{"credit":"Lucy Nicholson/Reuters","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSmall.jpg","type":"videoSmall"},{"credit":"Lucy Nicholson/Reuters","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoLarge.jpg","type":"videoLarge"},{"credit":"Lucy Nicholson/Reuters","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Lucy Nicholson/Reuters","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Lucy Nicholson/Reuters","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Lucy Nicholson/Reuters","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Lucy Nicholson/Reuters","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Lucy Nicholson/Reuters","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Lucy Nicholson/Reuters","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Lucy Nicholson/Reuters","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/multimedia/bathroom-rights-explain/bathroom-rights-explain-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000002797598,"headline":"U.S. & Politics","type":"Channel","url":"/video/us-politics","publish_url":"/video/us-politics","display_name":"U.S. & Politics","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":4},{"id":100000004370432,"headline":"Driven | 2017 Hyundai Elantra","summary":"The latest generation Elantra is for the masses — quiet, comfortable, controlled and predictable.","byline":"By TOM VOELK/DRIVEN","duration":274074,"authors":[{"data_id":29467,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":29467,"name":"TOM VOELK/DRIVEN","title_case_name":"Tom Voelk/Driven","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Mike Puretz","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-28T23:41:19.019.EDT","seo_url":"/video/automobiles/autoreviews/100000004370432/driven-2017-hyundai-elantra.html","domain":"http://www.nytimes.com","publish_url":"/video/automobiles/autoreviews/100000004370432/driven-2017-hyundai-elantra.html","images":[{"credit":"Martin Campbell","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Martin Campbell","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-thumbWide.jpg","type":"thumbWide"},{"credit":"Martin Campbell","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSmall.jpg","type":"videoSmall"},{"credit":"Martin Campbell","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoLarge.jpg","type":"videoLarge"},{"credit":"Martin Campbell","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Martin Campbell","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Martin Campbell","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Martin Campbell","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Martin Campbell","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Martin Campbell","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Martin Campbell","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/automobiles/autoreviews/driven-hyundai-elantra/driven-hyundai-elantra-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000002419522,"headline":"Driven","type":"Show","url":"/video/driven","publish_url":"/video/driven","display_name":"Driven","parent_display_name":"Business","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194811622255,"url":"/video/business","headline":"Business","display_name":"Business"},"parent_channel":{"id":1194811622255,"publish_url":"/video/business","headline":"Business","display_name":"Business"}},"sponsorFor":[],"index":5},{"id":100000004368232,"headline":"Anatomy | ‘The Man Who Knew Infinity’","summary":"Matthew Brown narrates a sequence from his film.","byline":"By MEKADO MURPHY","duration":161495,"authors":[{"data_id":3711,"data_name":null,"data_type":"author","data_format":"summary","url":"http://topics.nytimes.com/top/reference/timestopics/people/m/mekado_murphy/index.html","id":3711,"name":"MEKADO MURPHY","title_case_name":"Mekado Murphy","image":null,"bio":null,"twitter":"mekadomurphy","twitter_name":"mekadomurphy"}],"publication_date":"2016-04-28T16:04:14.014.EDT","seo_url":"/video/movies/100000004368232/anatomy-the-man-who-knew-infinity.html","domain":"http://www.nytimes.com","publish_url":"/video/movies/100000004368232/anatomy-the-man-who-knew-infinity.html","images":[{"credit":"Richard Blanshard/IFC","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Richard Blanshard/IFC","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-copy-thumbWide-v2.jpg","type":"thumbWide"},{"credit":"Richard Blanshard/IFC","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSmall.jpg","type":"videoSmall"},{"credit":"Richard Blanshard/IFC","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-copy-videoLarge-v2.jpg","type":"videoLarge"},{"credit":"Richard Blanshard/IFC","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Richard Blanshard/IFC","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Richard Blanshard/IFC","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Richard Blanshard/IFC","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Richard Blanshard/IFC","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Richard Blanshard/IFC","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Richard Blanshard/IFC","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Richard Blanshard/IFC","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/24/arts/24INFINITY-copy/24INFINITY-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000002420711,"headline":"Anatomy of a Scene","type":"Show","url":"/video/anatomy-of-a-scene","publish_url":"/video/anatomy-of-a-scene","display_name":"Anatomy of a Scene","parent_display_name":"Culture","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194811622313,"url":"/video/arts","headline":"Culture","display_name":"Culture"},"parent_channel":{"id":1194811622313,"publish_url":"/video/arts","headline":"Culture","display_name":"Culture"}},"sponsorFor":[],"index":6},{"id":100000004362198,"headline":"The Scorpions Are Out Early This Year","summary":"Hungry and disoriented because of an unseasonably warm winter, some unwanted creatures are invading backyards in Arizona. Look out for scorpions.","byline":"By FERNANDA SANTOS","duration":49149,"authors":[{"data_id":2705,"data_name":null,"data_type":"author","data_format":"summary","url":"http://topics.nytimes.com/top/reference/timestopics/people/s/fernanda_santos/index.html","id":2705,"name":"FERNANDA SANTOS","title_case_name":"Fernanda Santos","image":null,"bio":null,"twitter":"fernandaNYT","twitter_name":"fernandaNYT"},{"id":null,"name":"Erica Berenstein","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-28T11:21:46.046.EDT","seo_url":"/video/us/100000004362198/hunting-for-venomous-pests.html","domain":"http://www.nytimes.com","publish_url":"/video/us/100000004362198/hunting-for-venomous-pests.html","images":[{"credit":"Caitlin O'Hara for The New York Times","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Caitlin O'Hara for The New York Times","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-thumbWide.jpg","type":"thumbWide"},{"credit":"Caitlin O'Hara for The New York Times","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSmall.jpg","type":"videoSmall"},{"credit":"Caitlin O'Hara for The New York Times","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoLarge.jpg","type":"videoLarge"},{"credit":"Caitlin O'Hara for The New York Times","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Caitlin O'Hara for The New York Times","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Caitlin O'Hara for The New York Times","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Caitlin O'Hara for The New York Times","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Caitlin O'Hara for The New York Times","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Caitlin O'Hara for The New York Times","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Caitlin O'Hara for The New York Times","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Caitlin O'Hara for The New York Times","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/28/us/29scorpions-web1/29scorpions-web1-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":1194811622277,"headline":"Science","type":"Channel","url":"/video/science","publish_url":"/video/science","display_name":"Science","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":7},{"id":100000004367133,"headline":"ScienceTake | Shake a Tail Feather","summary":"Peacocks not only show their spectacular tails, or trains, they rattle them, and scientists are nailing down the physics of feather vibration.","byline":"By SAMANTHA STARK and JAMES GORMAN","duration":89990,"authors":[{"data_id":4104,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":4104,"name":"SAMANTHA STARK","title_case_name":"Samantha Stark","image":null,"bio":null,"twitter":null,"twitter_name":null},{"data_id":2239,"data_name":null,"data_type":"author","data_format":"summary","url":"http://topics.nytimes.com/top/reference/timestopics/people/g/james_gorman/index.html","id":2239,"name":"JAMES GORMAN","title_case_name":"James Gorman","image":{"url":"http://www.nytimes.com/imagepages/2012/03/13/timestopics/James-Gorman.html","data_type":"image","data_sub_type":null,"data_id":100000001425690,"data_format":"summary","headline":"","sub_headline":null,"seo_headline":null,"summary":"","byline":null,"kicker":null,"comments_enabled":false,"catalogue_type_of_material":"Image","multimedia_label":null,"channels":[],"section":{"display_name":"Times Topics","url":"http://www.nytimes.com/top/reference/timestopics/index.html","content":"timestopics","international_url":""},"subsection":null,"publication_date":1331611200,"publication_iso_date":"2012-03-13T00:00:00.000.EDT","first_published_timestamp":1331676294,"first_published_iso_timestamp":"2012-03-13T18:04:54.054.EDT","show_timestamp":false,"last_major_modification_timestamp":null,"last_major_modification_iso_timestamp":null,"promotional_media":null,"catalogue_keywords":[],"language":null,"data_name":"James-Gorman","authors":[],"image":{"image_type":"photo","caption":{"full":"James Gorman.","short":"","hide_caption_hp":false},"credit":"","merlin_id":null,"bleed":{"percent_top":0,"percent_right":0,"percent_bottom":0,"percent_left":0},"approved_for_syndication":false,"image_crops":{"square320":{"height":320,"width":320,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-square320-v3.jpg"},"thumbStandard":{"height":75,"width":75,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-thumbStandard-v3.jpg"},"thumbWide":{"height":126,"width":190,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-thumbWide-v3.jpg"},"moth":{"height":151,"width":151,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-moth-v3.jpg"},"filmstrip":{"height":190,"width":190,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-filmstrip-v3.jpg"},"hpLarge":{"height":287,"width":511,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-hpLarge-v3.jpg"},"articleInline":{"height":217,"width":190,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-articleInline-v5.jpg"},"sfSpan":{"height":264,"width":395,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-sfSpan-v5.jpg"},"hpSmall":{"height":186,"width":163,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-hpSmall-v2.jpg"},"miniMoth":{"height":70,"width":151,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-miniMoth-v3.jpg"},"videoThumb":{"height":50,"width":75,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoThumb-v3.jpg"},"videoSmall":{"height":281,"width":500,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSmall-v3.jpg"},"blogSmallThumb":{"height":50,"width":50,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blogSmallThumb-v3.jpg"},"blogSmallInline":{"height":173,"width":151,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blogSmallInline-v2.jpg"},"blog480":{"height":549,"width":480,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blog480-v2.jpg"},"blog533":{"height":609,"width":533,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blog533-v2.jpg"},"blog427":{"height":488,"width":427,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blog427-v2.jpg"},"tmagSF":{"height":414,"width":362,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-tmagSF-v2.jpg"},"slide":{"height":500,"width":438,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-slide-v2.jpg"},"jumbo":{"height":622,"width":544,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-jumbo-v4.jpg"},"superJumbo":{"height":622,"width":544,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-superJumbo-v2.jpg"},"thumbLarge":{"height":150,"width":150,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-thumbLarge-v3.jpg"},"videoHpMedium":{"height":211,"width":375,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoHpMedium-v3.jpg"},"blog225":{"height":257,"width":225,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-blog225-v2.jpg"},"mediumFlexible177":{"height":202,"width":177,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-mediumFlexible177-v2.jpg"},"largeHorizontal375":{"height":250,"width":375,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-largeHorizontal375-v3.jpg"},"mediumThreeByTwo210":{"height":140,"width":210,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-mediumThreeByTwo210-v3.jpg"},"master495":{"height":566,"width":495,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-master495-v2.jpg"},"master180":{"height":206,"width":180,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-master180-v2.jpg"},"videoSixteenByNine540":{"height":304,"width":540,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine540-v3.jpg"},"videoSixteenByNine495":{"height":278,"width":495,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine495-v3.jpg"},"videoSixteenByNine390":{"height":219,"width":390,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine390-v3.jpg"},"mediumThreeByTwo225":{"height":150,"width":225,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-mediumThreeByTwo225-v3.jpg"},"mediumSquare149":{"height":149,"width":149,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-mediumSquare149-v3.jpg"},"videoSixteenByNine480":{"height":270,"width":480,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine480-v3.jpg"},"videoSixteenByNine310":{"height":174,"width":310,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine310-v3.jpg"},"videoSixteenByNine225":{"height":126,"width":225,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine225-v3.jpg"},"videoSixteenByNine96":{"height":54,"width":96,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine96-v3.jpg"},"master315":{"height":360,"width":315,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-master315-v2.jpg"},"mediumThreeByTwo440":{"height":293,"width":440,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-mediumThreeByTwo440-v2.jpg"},"videoSixteenByNine150":{"height":84,"width":150,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-videoSixteenByNine150-v2.jpg"},"popup":{"height":500,"width":438,"url":"https://static01.nyt.com/images/2012/03/13/timestopics/James-Gorman/James-Gorman-popup-v4.jpg"}}},"column":null,"collections":{"columns":[],"sections":[],"newsevents":[]},"collection_overrides":[]},"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Alexandra Eaton","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-27T15:12:30.030.EDT","seo_url":"/video/science/100000004367133/sciencetake-shake-a-tail-feather.html","domain":"http://www.nytimes.com","publish_url":"/video/science/100000004367133/sciencetake-shake-a-tail-feather.html","images":[{"credit":"Roslyn Dakin","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Roslyn Dakin","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-thumbWide.jpg","type":"thumbWide"},{"credit":"Roslyn Dakin","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSmall.jpg","type":"videoSmall"},{"credit":"Roslyn Dakin","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoLarge.gif","type":"videoLarge"},{"credit":"Roslyn Dakin","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Roslyn Dakin","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Roslyn Dakin","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Roslyn Dakin","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Roslyn Dakin","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Roslyn Dakin","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Roslyn Dakin","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Roslyn Dakin","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/multimedia/sciencetake-peacock/sciencetake-peacock-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000002331748,"headline":"ScienceTake","type":"Show","url":"/video/sciencetake","publish_url":"/video/sciencetake","display_name":"ScienceTake","parent_display_name":"Science","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":1194811622277,"url":"/video/science","headline":"Science","display_name":"Science"},"parent_channel":{"id":1194811622277,"publish_url":"/video/science","headline":"Science","display_name":"Science"}},"sponsorFor":[],"index":8},{"id":100000004366797,"headline":"Raised With Rebels","summary":"Mélida was kidnapped by Colombian rebels when she was 9. She is one of thousands of children who were forced to fight in the country's half-century conflict.","byline":"By YOUSUR AL-HLOU, NICHOLAS CASEY and JUAN ARREDONDO","duration":185485,"authors":[{"data_id":30253,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":30253,"name":"YOUSUR AL-HLOU","title_case_name":"Yousur Al-Hlou","image":null,"bio":null,"twitter":null,"twitter_name":null},{"data_id":29404,"data_name":null,"data_type":"author","data_format":"summary","url":"http://topics.nytimes.com/top/reference/timestopics/people/c/nicholas_casey/index.html","id":29404,"name":"NICHOLAS CASEY","title_case_name":"Nicholas Casey","image":null,"bio":null,"twitter":"caseysjournal","twitter_name":"caseysjournal"},{"data_id":35104,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":35104,"name":"JUAN ARREDONDO","title_case_name":"Juan Arredondo","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Andrew Glazer","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-27T13:49:51.051.EDT","seo_url":"/video/world/americas/100000004366797/raised-with-rebels.html","domain":"http://www.nytimes.com","publish_url":"/video/world/americas/100000004366797/raised-with-rebels.html","images":[{"credit":"Juan Arredondo for The New York Times","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Juan Arredondo for The New York Times","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-thumbWide.jpg","type":"thumbWide"},{"credit":"Juan Arredondo for The New York Times","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSmall.jpg","type":"videoSmall"},{"credit":"Juan Arredondo for The New York Times","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoLarge.jpg","type":"videoLarge"},{"credit":"Juan Arredondo for The New York Times","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Juan Arredondo for The New York Times","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Juan Arredondo for The New York Times","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Juan Arredondo for The New York Times","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Juan Arredondo for The New York Times","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Juan Arredondo for The New York Times","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoFifteenBySeven2610.jpg","type":"videoFifteenBySeven2610"},{"credit":"Juan Arredondo for The New York Times","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Juan Arredondo for The New York Times","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/27/world/28COLOMBIA-WEB1/28COLOMBIA-WEB1-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":1194811622205,"headline":"International","type":"Channel","url":"/video/world","publish_url":"/video/world","display_name":"International","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":9},{"id":100000004362674,"headline":"Candidates Speak After Primaries","summary":"It was a big night for Donald J. Trump, who swept the Republican contests, and Hillary Clinton, who won all but Rhode Island among the Democratic primaries.","byline":"By ASSOCIATED PRESS and REUTERS","duration":202236,"authors":[{"data_id":31219,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":31219,"name":"ASSOCIATED PRESS","title_case_name":"Associated Press","image":null,"bio":null,"twitter":null,"twitter_name":null},{"data_id":3561,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":3561,"name":"REUTERS","title_case_name":"Reuters","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Quynhanh Do","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-26T23:09:25.025.EDT","seo_url":"/video/us/elections/100000004362674/candidates-speak-after-primaries.html","domain":"http://www.nytimes.com","publish_url":"/video/us/elections/100000004362674/candidates-speak-after-primaries.html","images":[{"credit":"Damon Winter/The New York Times","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-thumbStandard-v2.jpg","type":"thumbStandard"},{"credit":"Damon Winter/The New York Times","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-thumbWide.jpg","type":"thumbWide"},{"credit":"Damon Winter/The New York Times","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSmall.jpg","type":"videoSmall"},{"credit":"Damon Winter/The New York Times","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoLarge.jpg","type":"videoLarge"},{"credit":"Damon Winter/The New York Times","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Damon Winter/The New York Times","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Damon Winter/The New York Times","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Damon Winter/The New York Times","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Damon Winter/The New York Times","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoFifteenBySeven1305-v2.jpg","type":"videoFifteenBySeven1305"},{"credit":"Damon Winter/The New York Times","height":1218,"width":2610,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoFifteenBySeven2610-v2.jpg","type":"videoFifteenBySeven2610"},{"credit":"Damon Winter/The New York Times","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Damon Winter/The New York Times","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/26/us/26snapshots-trumpwin/26snapshots-trumpwin-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000003865580,"headline":"Election 2016","type":"Library","url":"/video/election-2016","publish_url":"/video/election-2016","display_name":"Election 2016","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":10},{"id":100000004359985,"headline":"Manufacturing China’s Future","summary":"A mayor tries to secure his city’s future… by tearing it down.","byline":"By QI ZHAO and HAO ZHOU","duration":812613,"authors":[{"data_id":34985,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":34985,"name":"QI ZHAO","title_case_name":"Qi Zhao","image":null,"bio":null,"twitter":null,"twitter_name":null},{"data_id":34986,"data_name":null,"data_type":"author","data_format":"summary","url":null,"id":34986,"name":"HAO ZHOU","title_case_name":"Hao Zhou","image":null,"bio":null,"twitter":null,"twitter_name":null},{"id":null,"name":"Kathleen Lingo","title_case_name":null,"image":null,"url":null,"bio":null,"twitter":null,"twitter_name":null}],"publication_date":"2016-04-26T04:19:20.020.EDT","seo_url":"/video/opinion/100000004359985/manufacturing-chinas-future.html","domain":"http://www.nytimes.com","publish_url":"/video/opinion/100000004359985/manufacturing-chinas-future.html","images":[{"credit":"Qi Zhao and Hao Zhou","height":75,"width":75,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-thumbStandard.jpg","type":"thumbStandard"},{"credit":"Qi Zhao and Hao Zhou","height":126,"width":190,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-thumbWide.jpg","type":"thumbWide"},{"credit":"Qi Zhao and Hao Zhou","height":281,"width":500,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSmall.jpg","type":"videoSmall"},{"credit":"Qi Zhao and Hao Zhou","height":507,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoLarge.jpg","type":"videoLarge"},{"credit":"Qi Zhao and Hao Zhou","height":591,"width":1050,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine1050.jpg","type":"videoSixteenByNine1050"},{"credit":"Qi Zhao and Hao Zhou","height":174,"width":310,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine310.jpg","type":"videoSixteenByNine310"},{"credit":"Qi Zhao and Hao Zhou","height":126,"width":225,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine225.jpg","type":"videoSixteenByNine225"},{"credit":"Qi Zhao and Hao Zhou","height":54,"width":96,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine96.jpg","type":"videoSixteenByNine96"},{"credit":"Qi Zhao and Hao Zhou","height":609,"width":1305,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoFifteenBySeven1305.jpg","type":"videoFifteenBySeven1305"},{"credit":"Qi Zhao and Hao Zhou","height":432,"width":768,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine768.jpg","type":"videoSixteenByNine768"},{"credit":"Qi Zhao and Hao Zhou","height":84,"width":150,"domain":"https://static01.nyt.com","url":"https://static01.nyt.com/images/2016/04/25/multimedia/opdoc-chinese-mayor/opdoc-chinese-mayor-videoSixteenByNine150.jpg","type":"videoSixteenByNine150"}],"assetMeta":{"name":"default"},"live":false,"playlist":{"id":100000004201922,"headline":"Op-Docs: Season 5","type":"Show","url":"/video/opdocs-season-5","publish_url":"/video/opdocs-season-5","display_name":"Op-Docs: Season 5","isSponsor":false,"sponsored":false,"sponsored_by":"","parent":{"id":null,"url":"","headline":"","display_name":""},"parent_channel":{"id":null,"publish_url":"","headline":"","display_name":""}},"sponsorFor":[],"index":11}];
+    var moreInPlaylistIds = [1247463985977,100000002032444,100000001606605,100000002797598,100000002419522,100000002420711,1194811622277,100000002331748,1194811622205];
+    var defaultImages = {"carousel":"//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-15by7-1305x609.png","social":"//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-16by9-1050x591.png","thumb_small":"//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-16by9-225x126.png","thumb_medium":"//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/img/video-default-16by9-310x174.png"};
+    </script>
+
+
+        <script type="text/javascript">
+            var NYTV = NYTV || {};
+            NYTV.env = "production";
+            NYTV.pageBundleUrl = "//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/channel.bundle.js";
+            NYTV.externalPageDeps = NYTV.externalPageDeps || [];
+            NYTV.externalPageDeps.push("//static01.nyt.com/bi/js/tagx/tagx.js");
+        </script>
+        <script src="//static01.nyt.com/video/4.7.17-990_1461860106_2016-04-28T16:15:06Z/static-timesvideo/js/bootstrap.bundle.js"></script><script class='ga-present'>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55951491-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
