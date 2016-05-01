@@ -17,9 +17,7 @@ import opennlp.tools.util.Span;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -34,7 +32,10 @@ public class QuoteParse {
 
         ArrayList<Quote> quotes_list = new ArrayList<Quote>();
 
-        // (1) parse the file into a Jsoup document //
+        // (1) get the source of the file, parse the file into a Jsoup document //
+        BufferedReader brTest = new BufferedReader(new FileReader(input_file));
+        String source = brTest .readLine();
+
         Document doc = Jsoup.parse(input_file, "UTF-8");
 
         // (2) get the text from the document //
@@ -96,7 +97,7 @@ public class QuoteParse {
 
             // create a new quote and store in quotes list (discard quotes that are just two words)//
             if(quotetext.split(" +").length > QUOTE_TOKEN_MIN){
-                Quote newquote = new Quote(input_file.getAbsolutePath(), quotespeaker, quotesubject, quotetext);
+                Quote newquote = new Quote(source, quotespeaker, quotesubject, quotetext);
 
                 System.out.println(newquote);
                 quotes_list.add(newquote);

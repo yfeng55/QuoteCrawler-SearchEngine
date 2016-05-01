@@ -63,6 +63,10 @@ public class WebCrawler {
 
                 String filename = query_input + "_" + FilenameUtils.getBaseName(link.getURL().toString()) + ".html";
                 File outputfile = new File(path_input + "/" +  filename);
+
+                //prepend the source url to the page (as the first line)
+                page = link.getURL().toString() + "\n" + page;
+
                 FileUtils.writeStringToFile(outputfile, page);
                 downloadedPages++;
                 downloadedURLs.add(link.getURL());
