@@ -45,6 +45,7 @@ public class WebCrawler {
         DOMAINS.add("www.forbes.com");
         DOMAINS.add("www.cnn.com");
         DOMAINS.add("www.cnbc.com");
+        DOMAINS.add("www.washingtonpost.com");
     }
 
 
@@ -116,6 +117,7 @@ public class WebCrawler {
             // starting points for crawl //
             ArrayList<URL> starting_urls = new ArrayList<URL>();
             try {
+                starting_urls.add(new URL("http://www.washingtonpost.com"));
                 starting_urls.add(new URL("http://www.bloomberg.com"));
                 starting_urls.add(new URL("http://www.nytimes.com"));
                 starting_urls.add(new URL("http://www.theatlantic.com"));
