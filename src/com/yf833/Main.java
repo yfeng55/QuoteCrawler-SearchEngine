@@ -82,7 +82,7 @@ public class Main {
 
             // get an array of quotes from the file
             quotes.addAll(QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder, sentCategorizer));
-
+            nameFinder.clearAdaptiveData();
         }
 
 

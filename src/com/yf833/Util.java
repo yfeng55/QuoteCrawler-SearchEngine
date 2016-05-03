@@ -117,7 +117,6 @@ public class Util {
 
         }
         else{
-            System.out.println("-- SAID OCCURS BEFORE QUOTE at" + quoteIndex + " --");
             int i=quoteIndex;
             try{
                 while(i > (quoteIndex + x)){
@@ -200,7 +199,7 @@ public class Util {
         }
 
         if(speaker.equals(("Mr.")) || speaker.equals("Mrs.") || speaker.equals(("Mr. ")) || speaker.equals("Mrs. ")){
-            System.out.println("-- MR. CASE --");
+//            System.out.println("-- MR. CASE --");
             speaker += maintext_tokens[speaker_end];
         }
 

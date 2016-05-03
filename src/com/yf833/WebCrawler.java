@@ -89,7 +89,7 @@ public class WebCrawler {
 
         }
 
-        System.out.println("Crawl complete.");
+        System.out.println("\n----- CRAWL COMPLETE -----\n");
 
     }
 

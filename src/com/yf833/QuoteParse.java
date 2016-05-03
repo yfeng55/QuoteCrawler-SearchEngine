@@ -54,7 +54,8 @@ public class QuoteParse {
 
         // (6) locate named entities in the text //
         Span[] namespans = nameFinder.find(maintext_tokens);   //contains start-end indices of names in maintext_tokens[]
-
+//        System.out.println("----- Named Entities -----");
+//        Util.printNamedEntities(namespans, maintext_tokens);
 
         // (6) Iterate through the text and process quotes //
         int iStartQuote=0;
@@ -69,7 +70,7 @@ public class QuoteParse {
             String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote, iEndQuote);
             quotetext = quotetext.replace("“", "");
             quotetext = quotetext.replaceAll("\\s+(?=\\p{Punct})", "");
-            System.out.println("QUOTE TEXT: " + quotetext);
+//            System.out.println("QUOTE TEXT: " + quotetext);
 
             // get text tokens, part-of-speech tags, and chunks //
             String[] quote_tokens = tokenizer.tokenize(quotetext);
@@ -80,13 +81,13 @@ public class QuoteParse {
             // get the subject of the quote //
             String quotesubject = getQuoteSubject(quote_tokens, quote_pos, quote_chunks);
             quotesubject = quotesubject.replace("“", "");
-            System.out.println("QUOTE SUBJECT: " + quotesubject);
+//            System.out.println("QUOTE SUBJECT: " + quotesubject);
 
 
             // get the speaker of the quote //
             String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, namespans, iStartQuote, iEndQuote);
             quotespeaker = quotespeaker.replace("“", "");
-            System.out.println("QUOTE SPEAKER: " + quotespeaker);
+//            System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
             // get the sentiment of the quote //
             double[] outcomes = sentCategorizer.categorize(quotetext);
@@ -103,7 +104,6 @@ public class QuoteParse {
 
         }
 
-        nameFinder.clearAdaptiveData();
         return quotes_list;
     }
 
@@ -196,11 +196,8 @@ public class QuoteParse {
             said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
 
-            System.out.println("-- SPEAKER CASE 1 --");
-
             //if speaker is empty
             if(speaker.replaceAll("\\s+","").equals("")){
-//                System.out.println("-- SPEAKER IS EMPTY, look for MR. --");
                 speaker = Util.getNearestMrEntity(maintext_tokens, said_position, SAID_SPAN);
             }
         }
@@ -212,11 +209,8 @@ public class QuoteParse {
             said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
 
-            System.out.println("-- SPEAKER CASE 2 --");
-
             //if speaker is empty
             if(speaker.replaceAll("\\s+","").equals("")){
-//                System.out.println("-- SPEAKER IS EMPTY, look for MR. --");
                 speaker = Util.getNearestMrEntity(maintext_tokens, said_position, SAID_SPAN);
             }
         }
@@ -225,10 +219,7 @@ public class QuoteParse {
 
         // catch-all: select the nearest named entity (in either direction) if speaker is still empty //
         if(speaker.replaceAll("\\s+","").equals("") || speaker.replaceAll("\\s+","").equals("unresolved")){
-
             speaker = Util.getNearestNamedEntity(maintext_tokens, namespans, iStart, iEnd);
-
-            System.out.println("-- SPEAKER CASE CATCH ALL --");
         }
 
 
