@@ -5,6 +5,8 @@ import opennlp.tools.chunker.Chunker;
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.cmdline.postag.POSModelLoader;
+import opennlp.tools.doccat.DoccatModel;
+import opennlp.tools.doccat.DocumentCategorizerME;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.postag.POSModel;
@@ -13,17 +15,16 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
 
 public class Main {
 
+
+    // SAMPLE DOCUMENTS (LOCAL FILES) FOR TESTING //
 //    public static final String input_path = "./sample_articles/hilary-clinton-new-york_nytimes.html";
 //    public static final String input_path = "./sample_articles/bernie-sanders-hillary-clinton-dnc_theatlantic.html";
 //    public static final String input_path = "./sample_articles/donald-trump-foreign-policy_nytimes.html";
@@ -70,6 +71,8 @@ public class Main {
         TokenNameFinderModel nameModel = new TokenNameFinderModel(new FileInputStream(new File("./en-ner-person.bin")));
         NameFinderME nameFinder = new NameFinderME(nameModel);
 
+        DoccatModel sentimentModel = new DoccatModel(new FileInputStream(new File("./en-sentiment-model.bin")));
+        DocumentCategorizerME sentCategorizer = new DocumentCategorizerME(sentimentModel);
 
         File output_directory = new File(path_input);
         File[] outputfiles = output_directory.listFiles();
@@ -78,7 +81,7 @@ public class Main {
         for(File f: outputfiles){
 
             // get an array of quotes from the file
-            quotes.addAll(QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder));
+            quotes.addAll(QuoteParse.getQuotes(f, tokenizer, posTagger, chunker, nameFinder, sentCategorizer));
 
         }
 
@@ -87,7 +90,6 @@ public class Main {
         int i=1;
         for(Quote q : quotes){
 
-//            String path = "./indexable_docs/quote" + i + "_" + FilenameUtils.getBaseName(q.source) + ".html";
             String path = "./indexable_docs/quote" + i + "_" + getRandom() + ".html";
             File f = new File(path);
 

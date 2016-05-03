@@ -3,16 +3,10 @@ package com.yf833;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.extractors.ArticleExtractor;
 import opennlp.tools.chunker.Chunker;
-import opennlp.tools.chunker.ChunkerME;
-import opennlp.tools.chunker.ChunkerModel;
-import opennlp.tools.cmdline.postag.POSModelLoader;
+import opennlp.tools.doccat.DocumentCategorizerME;
 import opennlp.tools.namefind.NameFinderME;
-import opennlp.tools.namefind.TokenNameFinderModel;
-import opennlp.tools.postag.POSModel;
 import opennlp.tools.postag.POSTaggerME;
 import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.tokenize.TokenizerME;
-import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.util.Span;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,7 +22,7 @@ public class QuoteParse {
     public static int QUOTE_TOKEN_MIN = 3; // denotes the minimum number of tokens a quote needs in order to be considered valid
 
     // return an arraylist of quotes extracted from the given page
-    public static ArrayList<Quote> getQuotes(File input_file, Tokenizer tokenizer, POSTaggerME posTagger, Chunker chunker, NameFinderME nameFinder) throws IOException, BoilerpipeProcessingException {
+    public static ArrayList<Quote> getQuotes(File input_file, Tokenizer tokenizer, POSTaggerME posTagger, Chunker chunker, NameFinderME nameFinder, DocumentCategorizerME sentCategorizer) throws IOException, BoilerpipeProcessingException {
 
         ArrayList<Quote> quotes_list = new ArrayList<Quote>();
 
@@ -94,10 +88,14 @@ public class QuoteParse {
             quotespeaker = quotespeaker.replace("“", "");
             //System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
+            // get the sentiment of the quote //
+            double[] outcomes = sentCategorizer.categorize(quotetext);
+            double positive_probability = outcomes[1];
+
 
             // create a new quote and store in quotes list (discard quotes that are just two words)//
             if(quotetext.split(" +").length > QUOTE_TOKEN_MIN){
-                Quote newquote = new Quote(source, quotespeaker, quotesubject, quotetext);
+                Quote newquote = new Quote(source, quotespeaker, quotesubject, quotetext, positive_probability);
 
                 System.out.println(newquote);
                 quotes_list.add(newquote);

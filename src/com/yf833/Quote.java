@@ -9,14 +9,12 @@ public class Quote {
     public String source;           // url to the page that contains the text
     public double sentiment;        // sentiment rating for the quote
 
-    public Quote(String source, String speaker, String subject, String text){
+    public Quote(String source, String speaker, String subject, String text, double positive_prob){
         this.subject = subject;
         this.speaker = speaker;
         this.text = text;
         this.source = source;
-
-        //default values
-        this.sentiment = 0.0;
+        this.sentiment = positive_prob;
     }
 
     public String toString(){
