@@ -66,7 +66,7 @@ public class QuoteParse {
             iStartQuote = Util.getNextQuotePosition(maintext_tokens, iStartQuote);
             iEndQuote = Util.getCloseQuotePosition(maintext_tokens, iStartQuote);
 
-            String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
+            String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote, iEndQuote);
             quotetext = quotetext.replace("“", "");
             quotetext = quotetext.replaceAll("\\s+(?=\\p{Punct})", "");
             System.out.println("QUOTE TEXT: " + quotetext);

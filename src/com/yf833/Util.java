@@ -72,7 +72,7 @@ public class Util {
         int i=iStart;
 
         try{
-            while(!maintext_tokens[i].equals("”")){
+            while(!maintext_tokens[i].equals("”") && !maintext_tokens[i].contains("”")){
                 i++;
             }
         }catch(ArrayIndexOutOfBoundsException e){
@@ -82,14 +82,14 @@ public class Util {
     }
 
     //get the text text
-    public static String getQuoteText(String[] maintext_tokens, int iStart){
+    public static String getQuoteText(String[] maintext_tokens, int iStart, int iEnd){
 
         String quote_text = "";
 
         int i=iStart;
 
         try{
-            while(!maintext_tokens[i].equals("”")){
+            while(i < iEnd){
                 quote_text += maintext_tokens[i] + " ";
                 i++;
             }
@@ -107,7 +107,8 @@ public class Util {
             int i=quoteIndex;
             try{
                 while(i < (quoteIndex + x)){
-                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("adds") ||
+                            maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
                     { return i; }
                     i++;
                 }
@@ -121,7 +122,8 @@ public class Util {
             try{
                 while(i > (quoteIndex + x)){
 
-                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("adds") ||
+                            maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
                     { return i; }
                     i--;
                 }

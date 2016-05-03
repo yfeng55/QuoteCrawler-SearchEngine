@@ -94,7 +94,7 @@ public class Main {
             File f = new File(path);
 
             System.out.println("writing..." + path);
-//            System.out.println(q.toString());
+            System.out.println(q.toString());
 
 //            FileUtils.writeStringToFile(f, q.toHTML());
 
