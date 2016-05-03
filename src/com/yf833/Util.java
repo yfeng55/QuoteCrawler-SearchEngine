@@ -100,14 +100,14 @@ public class Util {
     }
 
 
-    // find the position of said within x of the provided index
+    // find the position of said (and synonyms of said) within x of the provided index
     public static int positionOfSaidWithin_x(String[] maintext_tokens, int quoteIndex, int x){
 
         if(x>0){
             int i=quoteIndex;
             try{
                 while(i < (quoteIndex + x)){
-                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked"))
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
                     { return i; }
                     i++;
                 }
@@ -116,10 +116,12 @@ public class Util {
 
         }
         else{
+            System.out.println("-- SAID OCCURS BEFORE QUOTE at" + quoteIndex + " --");
             int i=quoteIndex;
             try{
-                while(i > (quoteIndex - x)){
-                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked"))
+                while(i > (quoteIndex + x)){
+
+                    if(maintext_tokens[i].contains("said") || maintext_tokens[i].contains("replied") || maintext_tokens[i].contains("asked") || maintext_tokens[i].contains("responds"))
                     { return i; }
                     i--;
                 }
@@ -198,6 +200,29 @@ public class Util {
         if(speaker.equals(("Mr.")) || speaker.equals("Mrs.") || speaker.equals(("Mr. ")) || speaker.equals("Mrs. ")){
             System.out.println("-- MR. CASE --");
             speaker += maintext_tokens[speaker_end];
+        }
+
+        return speaker;
+    }
+
+
+    // get nearest "Mr." chunk
+    public static String getNearestMrEntity(String[] maintext_tokens, int said_position, int SAID_SPAN){
+        String speaker = "";
+
+        int j = said_position;
+        for(int i=said_position; i<said_position + SAID_SPAN; i++){
+
+//            System.out.println(maintext_tokens[j]);
+//            System.out.println(maintext_tokens[i]);
+
+            if(maintext_tokens[i].contains("Mr.") || maintext_tokens[i].contains("Mrs.")){
+                speaker = maintext_tokens[i] + maintext_tokens[i+1];
+            }
+            else if(maintext_tokens[j].contains("Mr.") || maintext_tokens[j].contains("Mrs.")){
+                speaker = maintext_tokens[j] + maintext_tokens[j+1];
+            }
+            j--;
         }
 
         return speaker;

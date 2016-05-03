@@ -187,29 +187,44 @@ public class QuoteParse {
     //get the speaker of a quote
     private static String getQuoteSpeaker(String[] maintext_tokens, String[] maintext_chunks, Span[] namespans, int iStart, int iEnd){
         String speaker = "unresolved";
+        int said_position;
 
         // (1) if said occurs within x number of tokens of iEnd //
         if(Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN) != -1){
             //System.out.println("said is within +5 of iEnd");
 
-            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
+            said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
 
             System.out.println("-- SPEAKER CASE 1 --");
+
+            //if speaker is empty
+            if(speaker.replaceAll("\\s+","").equals("")){
+//                System.out.println("-- SPEAKER IS EMPTY, look for MR. --");
+                speaker = Util.getNearestMrEntity(maintext_tokens, said_position, SAID_SPAN);
+            }
         }
 
         // (2) if said occurs within x number of tokens of iStart //
         else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1) != -1){
             //System.out.println("said is within -5 of iStart");
 
-            int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
+            said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
 
             System.out.println("-- SPEAKER CASE 2 --");
+
+            //if speaker is empty
+            if(speaker.replaceAll("\\s+","").equals("")){
+//                System.out.println("-- SPEAKER IS EMPTY, look for MR. --");
+                speaker = Util.getNearestMrEntity(maintext_tokens, said_position, SAID_SPAN);
+            }
         }
 
-        // catch-all: select the nearest named entity (in either direction) //
-        else{
+
+
+        // catch-all: select the nearest named entity (in either direction) if speaker is still empty //
+        if(speaker.replaceAll("\\s+","").equals("") || speaker.replaceAll("\\s+","").equals("unresolved")){
 
             speaker = Util.getNearestNamedEntity(maintext_tokens, namespans, iStart, iEnd);
 
