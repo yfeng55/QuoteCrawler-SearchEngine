@@ -1,3 +1,5 @@
 *.iml
 *.xml
 *.html
+*.class
+*.jar

@@ -170,6 +170,7 @@ public class Util {
     // find the nearest named entity in either direction of a quote
     public static String getNearestNamedEntity(String[] maintext_tokens, Span[] namespans, int iStart, int iEnd){
         String speaker = "";
+        int speaker_end=namespans[0].getEnd();
 
         while((iStart > 0 || iEnd < maintext_tokens.length) && speaker.equals("")){
 
@@ -179,17 +180,24 @@ public class Util {
                     for(int i=name.getStart(); i<name.getEnd(); i++){
                         speaker += maintext_tokens[i] + " ";
                     }
+                    speaker_end = name.getEnd();
                 }
                 else if(name.getStart() == iEnd){
                     for(int i=name.getStart(); i<name.getEnd(); i++){
                         speaker += maintext_tokens[i] + " ";
                     }
+                    speaker_end = name.getEnd();
                 }
 
             }
 
             iStart--;
             iEnd++;
+        }
+
+        if(speaker.equals(("Mr.")) || speaker.equals("Mrs.") || speaker.equals(("Mr. ")) || speaker.equals("Mrs. ")){
+            System.out.println("-- MR. CASE --");
+            speaker += maintext_tokens[speaker_end];
         }
 
         return speaker;

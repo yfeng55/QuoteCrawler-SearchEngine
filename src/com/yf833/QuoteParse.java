@@ -69,7 +69,7 @@ public class QuoteParse {
             String quotetext = Util.getQuoteText(maintext_tokens, iStartQuote);
             quotetext = quotetext.replace("“", "");
             quotetext = quotetext.replaceAll("\\s+(?=\\p{Punct})", "");
-            //System.out.println("QUOTE TEXT: " + quotetext);
+            System.out.println("QUOTE TEXT: " + quotetext);
 
             // get text tokens, part-of-speech tags, and chunks //
             String[] quote_tokens = tokenizer.tokenize(quotetext);
@@ -80,13 +80,13 @@ public class QuoteParse {
             // get the subject of the quote //
             String quotesubject = getQuoteSubject(quote_tokens, quote_pos, quote_chunks);
             quotesubject = quotesubject.replace("“", "");
-            //System.out.println("QUOTE SUBJECT: " + quotesubject);
+            System.out.println("QUOTE SUBJECT: " + quotesubject);
 
 
             // get the speaker of the quote //
             String quotespeaker = getQuoteSpeaker(maintext_tokens, maintext_chunks, namespans, iStartQuote, iEndQuote);
             quotespeaker = quotespeaker.replace("“", "");
-            //System.out.println("QUOTE SPEAKER: " + quotespeaker);
+            System.out.println("QUOTE SPEAKER: " + quotespeaker);
 
             // get the sentiment of the quote //
             double[] outcomes = sentCategorizer.categorize(quotetext);
@@ -151,6 +151,35 @@ public class QuoteParse {
             }
         }
 
+        // 3. look for pronouns (PRP, WP)
+        for(int i=0; i<quote_tokens.length; i++){
+            String nnp_subject = "";
+            if(quote_pos[i].equals("PRP") || quote_pos[i].equals("WP")){
+                nnp_subject += quote_tokens[i];
+                i++;
+                return nnp_subject;
+            }
+        }
+
+        // 4. look for gerunds (VBG)
+        for(int i=0; i<quote_tokens.length; i++){
+            String nnp_subject = "";
+            if(quote_pos[i].equals("VBG")){
+                nnp_subject += quote_tokens[i];
+                i++;
+
+                try{
+                    while(quote_chunks[i].equals("I-NP") && i<quote_tokens.length){
+                        nnp_subject += " " + quote_tokens[i];
+                        i++;
+                    }
+                }catch(ArrayIndexOutOfBoundsException e){
+                }
+
+                return nnp_subject;
+            }
+        }
+
         return subject;
     }
 
@@ -165,6 +194,8 @@ public class QuoteParse {
 
             int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iEnd, SAID_SPAN);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
+
+            System.out.println("-- SPEAKER CASE 1 --");
         }
 
         // (2) if said occurs within x number of tokens of iStart //
@@ -173,6 +204,8 @@ public class QuoteParse {
 
             int said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
+
+            System.out.println("-- SPEAKER CASE 2 --");
         }
 
         // catch-all: select the nearest named entity (in either direction) //
@@ -180,7 +213,9 @@ public class QuoteParse {
 
             speaker = Util.getNearestNamedEntity(maintext_tokens, namespans, iStart, iEnd);
 
+            System.out.println("-- SPEAKER CASE CATCH ALL --");
         }
+
 
         return speaker;
     }
