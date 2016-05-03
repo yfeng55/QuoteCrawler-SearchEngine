@@ -43,9 +43,17 @@ public class WebCrawler {
         DOMAINS.add("www.theatlantic.com");
         DOMAINS.add("www.bloomberg.com");
         DOMAINS.add("www.forbes.com");
-        DOMAINS.add("www.cnn.com");
         DOMAINS.add("www.cnbc.com");
         DOMAINS.add("www.washingtonpost.com");
+        DOMAINS.add("www.latimes.com");
+        DOMAINS.add("www.huffingtonpost.com");
+        DOMAINS.add("www.usatoday.com");
+        DOMAINS.add("www.wsj.com");
+        DOMAINS.add("www.mercurynews.com");
+        DOMAINS.add("www.newsday.com");
+        DOMAINS.add("www.bostonglobe.com");
+        DOMAINS.add("www.inquirer.com");
+        DOMAINS.add("www.chicagotribune.com");
     }
 
 
@@ -117,10 +125,11 @@ public class WebCrawler {
             // starting points for crawl //
             ArrayList<URL> starting_urls = new ArrayList<URL>();
             try {
-                starting_urls.add(new URL("http://www.washingtonpost.com"));
-                starting_urls.add(new URL("http://www.bloomberg.com"));
-                starting_urls.add(new URL("http://www.nytimes.com"));
-                starting_urls.add(new URL("http://www.theatlantic.com"));
+                starting_urls.add(new URL("http://www.wsj.com"));
+                starting_urls.add(new URL("http://www.bostonglobe.com"));
+                starting_urls.add(new URL("http://www.huffingtonpost.com"));
+                starting_urls.add(new URL("http://www.chicagotribune.com"));
+                starting_urls.add(new URL("http://www.newsday.com"));
             } catch (MalformedURLException e) {
                 System.out.println("ERROR: invalid starting url");
             }

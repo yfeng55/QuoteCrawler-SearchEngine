@@ -173,35 +173,43 @@ public class Util {
     // find the nearest named entity in either direction of a quote
     public static String getNearestNamedEntity(String[] maintext_tokens, Span[] namespans, int iStart, int iEnd){
         String speaker = "";
-        int speaker_end=namespans[0].getEnd();
 
-        while((iStart > 0 || iEnd < maintext_tokens.length) && speaker.equals("")){
 
-            for(Span name : namespans){
+        try{
+            int speaker_end=namespans[0].getEnd();
 
-                if(name.getStart() == iStart){
-                    for(int i=name.getStart(); i<name.getEnd(); i++){
-                        speaker += maintext_tokens[i] + " ";
+            while((iStart > 0 || iEnd < maintext_tokens.length) && speaker.equals("")){
+
+                for(Span name : namespans){
+
+                    if(name.getStart() == iStart){
+                        for(int i=name.getStart(); i<name.getEnd(); i++){
+                            speaker += maintext_tokens[i] + " ";
+                        }
+                        speaker_end = name.getEnd();
                     }
-                    speaker_end = name.getEnd();
-                }
-                else if(name.getStart() == iEnd){
-                    for(int i=name.getStart(); i<name.getEnd(); i++){
-                        speaker += maintext_tokens[i] + " ";
+                    else if(name.getStart() == iEnd){
+                        for(int i=name.getStart(); i<name.getEnd(); i++){
+                            speaker += maintext_tokens[i] + " ";
+                        }
+                        speaker_end = name.getEnd();
                     }
-                    speaker_end = name.getEnd();
+
                 }
 
+                iStart--;
+                iEnd++;
             }
 
-            iStart--;
-            iEnd++;
+            if(speaker.equals(("Mr.")) || speaker.equals("Mrs.") || speaker.equals(("Mr. ")) || speaker.equals("Mrs. ")){
+//            System.out.println("-- MR. CASE --");
+                speaker += maintext_tokens[speaker_end];
+            }
+
+
+        }catch(ArrayIndexOutOfBoundsException e){
         }
 
-        if(speaker.equals(("Mr.")) || speaker.equals("Mrs.") || speaker.equals(("Mr. ")) || speaker.equals("Mrs. ")){
-//            System.out.println("-- MR. CASE --");
-            speaker += maintext_tokens[speaker_end];
-        }
 
         return speaker;
     }
@@ -217,13 +225,17 @@ public class Util {
 //            System.out.println(maintext_tokens[j]);
 //            System.out.println(maintext_tokens[i]);
 
-            if(maintext_tokens[i].contains("Mr.") || maintext_tokens[i].contains("Mrs.")){
-                speaker = maintext_tokens[i] + maintext_tokens[i+1];
+            try{
+                if(maintext_tokens[i].contains("Mr.") || maintext_tokens[i].contains("Mrs.")){
+                    speaker = maintext_tokens[i] + maintext_tokens[i+1];
+                }
+                else if(maintext_tokens[j].contains("Mr.") || maintext_tokens[j].contains("Mrs.")){
+                    speaker = maintext_tokens[j] + maintext_tokens[j+1];
+                }
+                j--;
+            }catch(ArrayIndexOutOfBoundsException e){
             }
-            else if(maintext_tokens[j].contains("Mr.") || maintext_tokens[j].contains("Mrs.")){
-                speaker = maintext_tokens[j] + maintext_tokens[j+1];
-            }
-            j--;
+
         }
 
         return speaker;

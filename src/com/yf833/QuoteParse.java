@@ -206,7 +206,7 @@ public class QuoteParse {
         else if(Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1) != -1){
             //System.out.println("said is within -5 of iStart");
 
-            said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN*-1);
+            said_position = Util.positionOfSaidWithin_x(maintext_tokens, iStart, SAID_SPAN * -1);
             speaker = Util.getSpeakerNearSaid(maintext_tokens, namespans, said_position);
 
             //if speaker is empty
@@ -222,6 +222,10 @@ public class QuoteParse {
             speaker = Util.getNearestNamedEntity(maintext_tokens, namespans, iStart, iEnd);
         }
 
+        // if speaker resolution was unsuccessful for all cases
+        if(speaker.replaceAll("\\s+","").equals("")){
+            speaker = "unresolved";
+        }
 
         return speaker;
     }

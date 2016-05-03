@@ -96,7 +96,7 @@ public class Main {
             System.out.println("writing..." + path);
             System.out.println(q.toString());
 
-//            FileUtils.writeStringToFile(f, q.toHTML());
+            FileUtils.writeStringToFile(f, q.toHTML());
 
             i++;
         }
