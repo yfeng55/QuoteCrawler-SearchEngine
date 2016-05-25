@@ -1,0 +1,95 @@
+
+body{
+	background-color: #FFFFFF;
+	font-size: 14px;
+	color: #555555;
+	padding:30px;
+	font-family: 'Helvetica Neue';
+}
+
+a{
+	color: #28aadc;
+}
+a:visited{
+	color: #28aadc;
+}
+
+
+h2{
+	font-size: 17px; font-family: 'Helvetica Neue'; 
+	color: rgb(102, 102, 102); 
+	font-weight: 700; 
+	vertical-align: baseline;
+}
+
+p{
+	line-height: 1.3;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.subheader{
+	margin-bottom: 10px;
+	font-weight: 500;
+	color: #000;
+	font-size: 16px;
+}
+
+.citation{
+	margin-top: 7px;
+}
+
+.instructions{
+	margin-top: 20px;
+}
+
+.formlabel {
+    display: inline-block;
+    width: 250px;
+    color: #555555;
+    font-weight: 500;
+}
+
+
+
+
+.button {
+	display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 2px 5px 2px 5px;
+    letter-spacing: 1.5;
+    color: white;
+    box-shadow: none;
+    background-color: #28aadc;
+    border-radius: 0;
+    border: none;
+    width: 65px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.button:focus {
+	outline: none
+}
+
+input{
+	margin-top: 5px;
+    height: 25px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
